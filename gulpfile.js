@@ -28,10 +28,14 @@ function minifyCSS() {
   );
 }
 
-gulp.task("minify-css", minifyCSS);
-
-gulp.task("watch", () => {
-  gulp.watch("./css/*.css", minifyCSS);
-});
-
-gulp.task('default', gulp.series('minify-css', 'watch'));
+var gulp = require('gulp');
+var cssmin = require('gulp-cssmin');
+var rename = require('gulp-rename');
+ 
+gulp.task('default', function () {
+    gulp.src('src/**/*.css')
+        .pipe(cssmin())
+        .pipe(rename({suffix: '.min'}))
+        .pipe(gulp.dest('dist'));
+    });
+    
