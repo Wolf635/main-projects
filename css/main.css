@@ -328,7 +328,8 @@ template {
 
 .container {
   max-width: 1256px;
-  margin: auto;}
+  margin: auto;
+  border: 1px solid blue; }
 
 .header {
   background-color: #131313;
