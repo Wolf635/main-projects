@@ -1,4 +1,9 @@
 .header
+  position: fixed
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 99
   background-color: $dark
   padding: 24px 0
 .menu
@@ -14,6 +19,9 @@
    text-decoration: none
    text-transform: uppercase
    margin-right: 40px
+   transition: color 0.1s
+   &:hover
+     color: $primary
 .phone
    color: $primary
 .contacts
