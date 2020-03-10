@@ -496,11 +496,31 @@ body {
   .title--primary {
     color: #e3b873; }
 
+@media screen and (max-width: 1326px) {
+  .logo {
+    font-size: 0.95rem; }
+  .contacts menu__contacts {
+    display: flex; }
+  .contacts__phone {
+    margin-right: 10px;
+    align-items: center; }
+  .hero__text {
+    margin-bottom: 3rem; }
+  .hero__button {
+    padding: 20px 27px; } }
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px; }
   .nav__item {
-    margin-right: 1rem; } }
+    margin-right: 1rem; }
+  .hero__text {
+    margin: 0;
+    padding-top: 10px;
+    line-height: 1.4;
+    padding-bottom: 36px; }
+  .hero__button {
+    padding: 20px 24px; } }
 
 @media screen and (max-width: 992px) {
   .nav {
@@ -510,7 +530,7 @@ body {
   .hero__content {
     margin-left: 0; } }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 576px) {
   .contacts__phone {
     margin-right: 0;
     color: #fff;
@@ -518,19 +538,18 @@ body {
   .contacts__button {
     display: none; }
   .title {
-    font-size: 1.64em; }
+    font-size: 1.85rem; }
   .hero__scroll-down {
     display: none; }
   .hero__content {
-    max-width: 22.86rem; }
+    max-width: 24.6rem; }
   .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
+    font-size: 1.398rem;
+    margin-bottom: 2.8rem;
+    line-height: 134%; }
   .hero__button {
     display: block;
-    min-width: 22.86rem;
-    margin-bottom: 1.85rem; } }
-
-@media screen and (max-height: 548px) {
-  .hero__scroll-down {
+    min-width: 26.55rem;
+    margin-bottom: 1.4rem; }
+  .section-title {
     display: none; } }
