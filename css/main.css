@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: 'Futura Book';
   src: url("../fonts/futura/FuturaBookC.woff") format("woff"), url("../fonts/futura/FuturaBookC.woff2") format("woff");
@@ -373,6 +372,14 @@ body {
 img {
   max-width: 100%; }
 
+.row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between; }
+
+.col {
+  flex-basis: 31.5%; }
+
 .header {
   position: fixed;
   left: 0;
@@ -619,8 +626,6 @@ img {
     align-items: center; }
   .types__card {
     margin-bottom: 5rem; }
-  .card__text {
-    margin-left: 0; }
   .button--outline {
     margin-top: 1.42rem; } }
 
@@ -640,6 +645,18 @@ img {
   .title {
     font-size: 1.85rem;
     margin: 0; }
+  .card__text {
+    max-width: 22.3rem;
+    margin-left: 0;
+    margin-top: -11.93rem;
+    padding: 1.65rem 2.46rem; }
+  .card__pricatag {
+    bottom: -1.4rem;
+    padding: 1.2rem 2.5rem; }
+  .card__list {
+    line-height: 1.9rem; }
+  .card__title {
+    font-size: 1.26rem; }
   .hero__scroll-down {
     display: none; }
   .hero__title {
@@ -652,31 +669,20 @@ img {
     font-size: 1.46rem;
     line-height: 1.4em;
     letter-spacing: 0.01em;
-    padding-bottom: 32px;
+    padding-bottom: 2.67rem;
     max-width: 26.3rem; }
   .hero__button {
     width: 100%;
     font-size: 1.1rem; }
   .button--outline {
     margin-top: 1.8rem; }
-  .section-title {
-    display: none; } }
-
-@media screen and (max-width: px) {
-  .container {
-    width: 90%;
-    margin-top: 0; }
-  .hero__title {
-    font-size: 1.9rem;
-    padding-top: 3.398rem;
-    padding-bottom: 0.7rem; }
-  .hero__text {
-    font-size: 1.375rem;
-    line-height: 1.5em;
-    margin: 0; }
-  .hero__button {
-    width: 100%; }
-  .hero__content {
-    max-width: 29.5rem; } }
-
-/** Медиа запросы второй секции карточек **/
+  .section-title__heading {
+    font-size: 1.83rem; }
+  .types__section-title {
+    margin-bottom: 3.3rem; }
+  .types__card {
+    margin-bottom: 6rem; }
+  .section__text__design {
+    max-width: 25rem;
+    font-size: 1.25rem;
+    margin-top: 1.4rem; } }
