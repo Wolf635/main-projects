@@ -1,6 +1,6 @@
 .modal
     position: fixed
-    z-index: 300
+    z-index: 99
     left: 0
     top: 0
     bottom: 0
@@ -23,7 +23,9 @@
         top: 0
         width: 28px
         height: 28px
-        background: transparent url('../img/close.svg') no-repeat center
+        background: transparent url('../img/close.svg') / 0.8rem
+        background-repeat: no-repeat
+        align-items: center
         border: none 
         margin: 12px
         cursor: pointer
@@ -35,5 +37,12 @@
         margin-bottom: 2.428rem
     &__form
         display: flex
-        flex-direction: column    
+        flex-direction: column  
+    &__input
+        margin-bottom: 3.428rem
+        &:last-of-type 
+            margin-bottom: 1rem 
+    &__policy
+        margin-bottom: 2.7rem          
+              
      

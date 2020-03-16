@@ -339,6 +339,49 @@ template {
     background-color: transparent;
     color: #fff; }
 
+.label {
+  font-size: 1.07rem; }
+  .label--light {
+    color: rgba(255, 255, 255, 0.5); }
+
+.input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  font-size: 1.285rem;
+  color: #fff;
+  padding: 0.5rem 0; }
+  .input::-webkit-input-placeholder {
+    color: #fff; }
+  .input::-moz-placeholder {
+    color: #fff; }
+  .input:-ms-input-placeholder {
+    color: #fff; }
+  .input::-ms-input-placeholder {
+    color: #fff; }
+  .input::placeholder {
+    color: #fff; }
+
+.policy__checkbox {
+  opacity: 0;
+  visibility: hidden; }
+  .policy__checkbox::checked + .policy__label::before {
+    background: #e3b873 url("../img/check.svg");
+    background-repeat: no-repeat;
+    align-items: center; }
+
+.policy__label {
+  display: flex;
+  align-items: center; }
+  .policy__label::before {
+    content: '';
+    width: 18px;
+    height: 18px;
+    border: 1px solid #e3b873;
+    border-radius: 1px;
+    cursor: pointer;
+    margin-right: 0.64rem; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -385,7 +428,7 @@ img {
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 90;
   background-color: #131313;
   padding: 24px 0; }
 
@@ -584,7 +627,7 @@ img {
 
 .modal {
   position: fixed;
-  z-index: 300;
+  z-index: 99;
   left: 0;
   top: 0;
   bottom: 0;
@@ -607,7 +650,9 @@ img {
     top: 0;
     width: 28px;
     height: 28px;
-    background: transparent url("../img/close.svg") no-repeat center;
+    background: transparent url("../img/close.svg")/0.8rem;
+    background-repeat: no-repeat;
+    align-items: center;
     border: none;
     margin: 12px;
     cursor: pointer; }
@@ -620,6 +665,12 @@ img {
   .modal__form {
     display: flex;
     flex-direction: column; }
+  .modal__input {
+    margin-bottom: 3.428rem; }
+    .modal__input:last-of-type {
+      margin-bottom: 1rem; }
+  .modal__policy {
+    margin-bottom: 2.7rem; }
 
 @media screen and (max-width: 1366px) {
   .section-title {
