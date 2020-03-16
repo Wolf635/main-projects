@@ -641,7 +641,9 @@ img {
   .modal__dialog {
     position: relative;
     max-width: 36.36rem;
-    background: #131313;
+    background: #131313 url("../img/bg-lines.svg");
+    background-repeat: no-repeat;
+    align-items: center;
     padding: 2.357rem 3.5rem 1.928rem;
     color: #fff; }
   .modal__close {
@@ -671,6 +673,8 @@ img {
       margin-bottom: 1rem; }
   .modal__policy {
     margin-bottom: 2.7rem; }
+  .modal__button {
+    align-self: flex-end; }
 
 @media screen and (max-width: 1366px) {
   .section-title {
