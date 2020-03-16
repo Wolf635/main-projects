@@ -36,12 +36,10 @@
   &__checkbox
     opacity: 0
     visibility: hidden
-    &::checked +
+    &:checked +
       .policy__label
         &::before
-          background: $primary url('../img/check.svg')
-          background-repeat: no-repeat
-          align-items: center
+          background: $primary url('../img/check.svg') no-repeat center / 0.8rem
   &__label
     display: flex
     align-items: center
