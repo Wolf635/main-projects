@@ -2,7 +2,6 @@
     .section-title
         font-size: 0.95rem
    
-
 @media screen and ( max-width: 1326px )
     .logo
         font-size: 0.95rem
@@ -15,7 +14,6 @@
         margin-bottom: 3rem  
     .hero__button
         padding: 20px 27px
-
 
 @media screen and ( max-width: 1200px )
     html 
@@ -31,7 +29,6 @@
     .hero__button
         padding: 20px 24px    
 
-
 @media screen and ( max-width: 992px ) 
     .nav
         display: none
@@ -43,11 +40,19 @@
     .types
         .card
             &__title
-                min-height: 2.9rem           
+                min-height: 2.9rem    
+
 @media screen and ( max-width: 906px )
     .card__title
         max-width: 2.7rem
-
+    .row__slide
+        flex-direction: column
+    .col-50
+        width: 100%
+        &__projects
+            margin-top: 3rem
+    .swiper-slide-image
+        width: 100%        
 
 @media screen and (min-width: 800px) and( max-width: 812px )
     .modal
@@ -60,7 +65,6 @@
             margin-bottom: 0
         &__title
             margin-bottom: 1rem        
-
        
 @media screen and ( max-width: 760px )
     .row
@@ -81,7 +85,6 @@
             margin-bottom: 1rem
             height: 2.2rem
 
-
 @media screen and (min-width: 580px) and( max-width: 667px )
     .modal
         &__dialog
@@ -91,9 +94,6 @@
             height: 1.8rem   
         &__title
             margin-bottom: 1.5rem     
-        
-
-
   
 @media screen and ( max-width: 576px ) 
     .container
@@ -150,10 +150,12 @@
         &__heading
             font-size: 1.65rem 
             margin-top: 0
-            margin-bottom: 2.2rem
+            margin-bottom: 2.2rem    
         &__text
             max-width: 25rem
             font-size: 1.15rem
+            &::after
+                display: none           
     .types__section-title
         margin-bottom: 3.3rem  
     .types__card
@@ -167,19 +169,9 @@
             margin: 2.14rem 
             width: 100%
     .col-50
-        width: 100%
+        width: 100%        
 
-/** @media screen and (min-width: 500px) and( max-width: 570px )  
-    .modal
-        &__dialog
-            max-height: 24rem         
-        &__input
-            margin-bottom: 1rem
-            height: 1.4rem   
-        &__title
-            margin-bottom: 0.8rem  
-        &__policy
-            margin-bottom: 0   **/        
+       
  
             
 

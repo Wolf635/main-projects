@@ -610,11 +610,10 @@ img {
   .swiper-slide__text {
     flex-basis: 50%;
     display: block;
-    margin-bottom: 2.42rem;
-    padding-bottom: 2rem; }
+    margin-bottom: 5rem; }
   .swiper-slide__heading {
     font-size: 1.285rem;
-    margin-top: 2.3rem;
+    margin-top: 0;
     line-height: 1.78rem;
     font-family: 'Yeseva One', cursive;
     color: #e3b873;
@@ -797,7 +796,15 @@ img {
 
 @media screen and (max-width: 906px) {
   .card__title {
-    max-width: 2.7rem; } }
+    max-width: 2.7rem; }
+  .row__slide {
+    flex-direction: column; }
+  .col-50 {
+    width: 100%; }
+    .col-50__projects {
+      margin-top: 3rem; }
+  .swiper-slide-image {
+    width: 100%; } }
 
 @media screen and (min-width: 800px) and (max-width: 812px) {
   .modal__dialog {
@@ -891,6 +898,8 @@ img {
   .section-title__text {
     max-width: 25rem;
     font-size: 1.15rem; }
+    .section-title__text::after {
+      display: none; }
   .types__section-title {
     margin-bottom: 3.3rem; }
   .types__card {
@@ -904,15 +913,3 @@ img {
     width: 100%; }
   .col-50 {
     width: 100%; } }
-
-/** @media screen and (min-width: 500px) and( max-width: 570px )
-    .modal
-        &__dialog
-            max-height: 24rem
-        &__input
-            margin-bottom: 1rem
-            height: 1.4rem
-        &__title
-            margin-bottom: 0.8rem
-        &__policy
-            margin-bottom: 0   **/
