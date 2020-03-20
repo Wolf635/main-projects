@@ -707,18 +707,13 @@ img {
 
 .control__input {
   font-size: 1.5rem; }
-  .control__input--group {
-    margin-bottom: 5.25rem;
-    font-size: 1.5rem; }
 
 .control__label {
   margin-bottom: -7px; }
 
 .control__button {
   padding: 1.2857rem 4.785rem;
-  order: 2;
-  font-size: 1.25rem;
-  margin-bottom: 4.83rem; }
+  font-size: 1.25rem; }
 
 .control__policy {
   flex-basis: 100%;
@@ -1039,8 +1034,14 @@ img {
   .control__policy-label {
     justify-content: flex-start;
     margin-bottom: 9.4rem; }
+  .control__button {
+    order: 2;
+    margin-bottom: 4.83rem; }
   .control__text {
     max-width: 100%;
     font-size: 1.16rem; }
   .control__form {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .control__input--group {
+    margin-bottom: 5.25rem;
+    font-size: 1.5rem; } }
