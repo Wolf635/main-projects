@@ -86,6 +86,7 @@ $(document). ready(function () {
 
   // Форма Онлайн контроль
   $('.control__form').validate({
+    errorElement: "div",
     errorClass: "invalid",
     rules: {
       //  строчное правило
@@ -114,6 +115,7 @@ $(document). ready(function () {
 
   $('.footer__form').validate({
     errorClass: "invalid",
+    errorElement: "div",
     rules: {
       //  строчное правило
       userName: {

@@ -384,8 +384,10 @@ template {
   .policy__label--center {
     justify-content: center; }
 
-label.invalid {
-  color: tomato; }
+.invalid {
+  color: red;
+  margin-top: 2px;
+  font-size: 1.1rem; }
 
 input.invalid {
   border-bottom: 1px solid tomato; }
