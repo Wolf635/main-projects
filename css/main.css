@@ -351,7 +351,15 @@ template {
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
-  .input--light {
+  .input--light::-webkit-input-placeholder {
+    color: #fff; }
+  .input--light::-moz-placeholder {
+    color: #fff; }
+  .input--light:-ms-input-placeholder {
+    color: #fff; }
+  .input--light::-ms-input-placeholder {
+    color: #fff; }
+  .input--light::placeholder {
     color: #fff; }
 
 .policy__checkbox {
@@ -362,7 +370,8 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.142rem; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -371,6 +380,8 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
 
 .container {
   width: 85%;
@@ -694,11 +705,20 @@ img {
   flex-direction: column;
   flex-basis: 30%; }
 
+.control__input {
+  font-size: 1.5rem; }
+  .control__input--group {
+    margin-bottom: 5.25rem;
+    font-size: 1.5rem; }
+
 .control__label {
   margin-bottom: -7px; }
 
 .control__button {
-  padding: 1.2857rem 4.785rem; }
+  padding: 1.2857rem 4.785rem;
+  order: 2;
+  font-size: 1.25rem;
+  margin-bottom: 4.83rem; }
 
 .control__policy {
   flex-basis: 100%;
@@ -750,6 +770,10 @@ img {
 .card__design {
   width: 16.285rem; }
 
+.design {
+  margin-top: 50px;
+  padding-bottom: 30rem; }
+
 .section__text__design {
   text-align: center;
   max-width: 52rem;
@@ -761,11 +785,42 @@ img {
   margin-bottom: 3.49rem;
   margin-top: 1.1rem; }
 
-.section__design {
-  margin-top: 50px; }
-
 .col {
   flex-basis: 31.5%; }
+
+.footer-wrap {
+  background-color: #181818;
+  max-width: 53.07rem;
+  margin: auto;
+  padding: 2.5rem; }
+
+.footer__title {
+  text-transform: uppercase;
+  font-family: 'Yeseva One', cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.428rem;
+  text-align: center;
+  margin-bottom: 3.214rem; }
+
+.footer__form {
+  display: flex;
+  flex-wrap: wrap; }
+
+.footer__input-group {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  margin-bottom: 2rem; }
+  .footer__input-group--full-width {
+    flex-basis: 100%; }
+
+.footer__policy {
+  flex-basis: 100%;
+  margin-bottom: 2rem; }
+
+.footer__button {
+  margin: auto; }
 
 .modal {
   opacity: 0;
@@ -980,4 +1035,12 @@ img {
     margin: 2.14rem;
     width: 100%; }
   .col-50 {
-    width: 100%; } }
+    width: 100%; }
+  .control__policy-label {
+    justify-content: flex-start;
+    margin-bottom: 9.4rem; }
+  .control__text {
+    max-width: 100%;
+    font-size: 1.16rem; }
+  .control__form {
+    flex-direction: column; } }
