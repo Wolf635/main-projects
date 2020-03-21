@@ -352,6 +352,8 @@ template {
   font-size: 1.285rem;
   color: #fff;
   padding: 0.5rem 0; }
+  .input-group {
+    position: relative; }
   .input--light::-webkit-input-placeholder {
     color: #fff; }
   .input--light::-moz-placeholder {
@@ -384,10 +386,14 @@ template {
   .policy__label--center {
     justify-content: center; }
 
-.invalid {
-  color: red;
-  margin-top: 2px;
-  font-size: 1.1rem; }
+em.invalid {
+  color: tomato;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 55px;
+  right: 0px;
+  margin: auto;
+  letter-spacing: 0.020rem; }
 
 input.invalid {
   border-bottom: 1px solid tomato; }
@@ -712,7 +718,8 @@ img {
 .control__input-group {
   display: flex;
   flex-direction: column;
-  flex-basis: 30%; }
+  flex-basis: 30%;
+  position: relative; }
 
 .control__input {
   font-size: 1.285rem; }
@@ -794,6 +801,10 @@ img {
 
 .col {
   flex-basis: 31.5%; }
+
+.section__text__team {
+  max-width: 300px;
+  margin: auto; }
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
@@ -1036,8 +1047,9 @@ img {
     margin-top: 1.8rem; }
   .section-title__heading {
     font-size: 1.65rem;
-    margin-top: 0;
-    margin-bottom: 2.2rem; }
+    margin-top: 4.833rem;
+    margin-bottom: 2.2rem;
+    color: #fff; }
   .section-title__text {
     max-width: 25rem;
     font-size: 1.15rem; }
@@ -1046,29 +1058,48 @@ img {
   .types__section-title {
     margin-bottom: 3.3rem; }
   .types__card {
-    margin-bottom: 6rem; }
+    magin-bottom: 6rem; }
   .section__text__design {
     max-width: 25rem;
     font-size: 1.25rem;
-    margin-top: 1.4rem; }
+    margin-top: 1.4rem;
+    color: #fff; }
+  .design-project {
+    background-color: #131313; }
   .modal__dialog {
     margin: 2.14rem;
     width: 100%; }
   .col-50 {
     width: 100%; }
-  .control__policy-label {
-    justify-content: flex-start;
-    margin-bottom: 9.4rem; }
-  .control__button {
-    order: 2;
-    margin-bottom: 4.83rem; }
-  .control__text {
-    max-width: 100%;
-    font-size: 1.16rem; }
-  .control__form {
-    flex-direction: column; }
-  .control__input {
-    font-size: 1.5rem; }
-    .control__input--group {
-      margin-bottom: 5.25rem;
-      font-size: 1.5rem; } }
+  .control {
+    background-color: #131313; }
+    .control__label {
+      color: rgba(255, 255, 255, 0.5); }
+    .control__policy {
+      margin-top: 0; }
+      .control__policy-label {
+        justify-content: flex-start;
+        margin-bottom: 5.1rem;
+        color: #fff;
+        padding-top: 1rem; }
+    .control__button {
+      order: 2;
+      margin-bottom: -2.08rem; }
+    .control__text {
+      max-width: 100%;
+      font-size: 1.16rem;
+      color: #fff;
+      margin-bottom: 0; }
+    .control__form {
+      flex-direction: column; }
+    .control__input {
+      font-size: 1.5rem; }
+      .control__input-group {
+        font-size: 1.5rem;
+        color: #fff;
+        margin-top: 3.5rem; }
+  .footer {
+    background: #363636; }
+    .footer__input-group {
+      flex-basis: 100%;
+      color: #fff; } }

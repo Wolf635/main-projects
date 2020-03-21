@@ -53,6 +53,7 @@ $(document). ready(function () {
   // Валидация формы
   $('.modal__form').validate({
     errorClass: "invalid",
+    errorElement: "em",
     rules: {
       //  строчное правило
       userName: {
@@ -82,12 +83,12 @@ $(document). ready(function () {
   });
 
   // маска для телефона
-  $('[type=tel]').mask('+7(000) 00-00-000', {placeholder: "+7 (___) __-__-___"});
+  $('[type=tel]').mask('+7(000) 00-00-000',{placeholder: "+7 (___) __-__-___"});
 
   // Форма Онлайн контроль
   $('.control__form').validate({
-    errorElement: "div",
     errorClass: "invalid",
+    errorElement: "em",
     rules: {
       //  строчное правило
       userName: {
@@ -115,13 +116,13 @@ $(document). ready(function () {
 
   $('.footer__form').validate({
     errorClass: "invalid",
-    errorElement: "div",
+    errorElement: "em",
     rules: {
       //  строчное правило
       userName: {
         required: true,
         minlength: 2,
-        maxlength: 15
+        maxlength: 15,
       },
       userPhone: "required",
       // правило-объект (блок)
