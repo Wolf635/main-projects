@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=12ab6899-cb20-4dd2-b9d6-81c5354f3106&lang=ru_RU"
+        type="text/javascript"></script>
     <title>Турецкий ремонт</title>
 </head>
 
@@ -227,8 +229,10 @@
                     </div>
                     <button class="button button--primary control__button">Отправить</button>
                     <div class="policy control__policy">
-                        <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox"checked>
-                        <label for="policy-checkbox" class="policy__label control__policy-label">я соглашаюсь обработкой данных</label>
+                        <input type="checkbox" name="policy-checkbox" id="policy-checkbox" class="policy__checkbox"
+                            checked>
+                        <label for="policy-checkbox" class="policy__label control__policy-label">я соглашаюсь обработкой
+                            данных</label>
                     </div>
                     <!-- /.policy -->
                 </form>
@@ -593,20 +597,41 @@
                     <div class="input-group footer__input-group">
                         <label for="user-phone" class="label form__label label--light">Телефон</label>
                         <input type="tel" autocomplete="off" name="userPhone"
-                            class="input form__input footer__input input--light" id="user-phone"placeholder="Ваш номер телефона:">
+                            class="input form__input footer__input input--light" id="user-phone"
+                            placeholder="Ваш номер телефона:">
                     </div>
                     <div class="input-group footer__input-group footer__input-group--full-width">
                         <label for="user-question" class="label form__label label--light">Вопрос</label>
-                        <input type="text" class="input form__input footer__input input--light" id="user-question"placeholder="Я хочу спросить:">
+                        <input type="text" class="input form__input footer__input input--light" id="user-question"
+                            placeholder="Я хочу спросить:">
                     </div>
                     <div class="policy footer__policy">
-                        <input type="checkbox" name="footer-policy-checkbox" id="footer-policy-checkbox" class="policy__checkbox"checked>
-                        <label for="footer-policy-checkbox" class="policy__label policy__label--center">я соглашаюсь с обработкой данных</label>
+                        <input type="checkbox" name="footer-policy-checkbox" id="footer-policy-checkbox"
+                            class="policy__checkbox" checked>
+                        <label for="footer-policy-checkbox" class="policy__label policy__label--center">я соглашаюсь с
+                            обработкой данных</label>
                     </div>
                     <!-- /.policy -->
                     <button class="button button--primary footer__button">Отправить</button>
                 </form>
                 <!-- /.form footer__form -->
+            </div>
+            <div class="footer-title">
+                <div class="container">
+                    <div class="footer__title__wrapper">
+                        <div class="footer-title__wrapper__text"></div>
+                            Ростов на дону, торговый центр PLAZA прямой телефон +7 (999) 768-32-99</div>   
+                    </div>
+                    <div class="footer__social">
+                        <a href="mailto" remont@mail.ru target="_blank" title="Напишите нам на почту"><img
+                                src="img/email-icon.svg" alt="Почта"></a>
+                        <a href="#" target="_blank" title="Напишите нам в инстаграм"><img class="footer__social__instagram" src="img/instagram-icon.svg"
+                                alt="instagram"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="map footer__map" id="map">
+
             </div>
         </div>
         <!-- /.container -->
@@ -655,7 +680,8 @@
                         class="input form__input modal__input input--light" id="user-email" placeholder="Ваш email:">
                 </div>
                 <div class="policy modal__policy">
-                    <input type="checkbox" name="modal-policy-checkbox" id="modal-policy-checkbox" class="policy__checkbox" checked>
+                    <input type="checkbox" name="modal-policy-checkbox" id="modal-policy-checkbox"
+                        class="policy__checkbox" checked>
                     <label for="modal-policy-checkbox" class="policy__label">я соглашаюсь с обработкой данных</label>
                 </div>
                 <!-- /.policy -->

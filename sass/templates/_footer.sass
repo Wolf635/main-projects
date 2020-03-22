@@ -9,7 +9,7 @@
         transform: translate(0, -50%) 
         /** возможно отступ и не нужен будет **/
         margin-bottom 3.714rem
-    &__title
+    &__title 
         text-transform: uppercase
         font-family: 'Yeseva One', cursive
         font-style: normal
@@ -18,6 +18,22 @@
         text-align: center
         margin-bottom: 3.214rem
         margin-top: 0
+        &__wrapper
+            margin: auto
+            &__text
+            color: $primary  
+            font-size: 18px 
+            text-transform: uppercase
+            font-family: 'Yeseva One', cursive
+            font-size: 1.428em
+            display: flex
+            max-width: 35rem
+            text-align: center
+    &__social
+        text-align: center
+        margin: 2rem 3rem    
+        &__instagram
+            margin-left: 1.07rem              
     &__form
         display: flex
         flex-wrap: wrap  
@@ -43,5 +59,10 @@
     &__menu
         background: $dark
         padding: 4.285rem 0
+    &__map    
+        height: 465px
+        width: 900px
+        margin: auto
+        margin-bottom: 6rem
 
 
