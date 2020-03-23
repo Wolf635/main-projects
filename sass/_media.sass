@@ -40,7 +40,10 @@
     .types
         .card
             &__title
-                min-height: 2.9rem    
+                min-height: 2.9rem  
+    .footer
+        &__map
+            width: 100%              
 
 @media screen and ( max-width: 906px )
     .card__title
@@ -52,7 +55,10 @@
         &__projects
             margin-top: 3rem
     .swiper-slide-image
-        width: 100%        
+        width: 100%  
+    .footer
+        &__map
+            width: 100%          
 
 @media screen and (min-width: 800px) and( max-width: 812px )
     .modal
@@ -76,6 +82,9 @@
     .button
         &--outline
             margin-top: 1.42rem
+    .footer
+        &__map
+            width: 100%        
 
 @media screen and (min-width: 580px) and ( max-width: 731px )
     .modal
@@ -205,11 +214,27 @@
                 color: $light
                 margin-top: 3.5rem
     .footer
-        background: #363636// цвет временный
+        background: #363636
+        &__map
+            width: 90%
+            order: 
+        &__title
+            display: flex
+            flex-direction: column
+            flex-direction: column-reverse
+            &__wrapper
+                &__text
+                    font-size: 0.92rem                   
         &__input
             &-group
                 flex-basis: 100%
                 color: $light
+    
+
+                
+            
+                       
+    
 
                 
               
