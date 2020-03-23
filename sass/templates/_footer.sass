@@ -17,17 +17,31 @@
         font-size: 1.428rem
         text-align: center
         margin-top: 0
-        &__wrapper
-            margin: auto
+        display: flex
+
+        &__wrap
+            
+            flex-direction: column
             &__text
-            color: $primary  
-            font-size: 18px 
-            text-transform: uppercase
-            font-family: 'Yeseva One', cursive
-            font-size: 1.428em
-            display: flex
-            max-width: 50rem
-            text-align: center
+                color: $primary  
+                text-transform: uppercase
+                font-family: 'Yeseva One', cursive
+                font-size: 1.428rem
+                display: flex
+                max-width: 50rem
+                text-align: center
+                margin: auto 
+        
+    &__map   
+        margin: auto 
+        height: 465px
+        width: 63.07rem
+        margin-bottom: 6rem
+        order: 
+    
+    
+    
+                    
     &__social
         text-align: center
         margin-bottom: 2.5rem    
@@ -58,10 +72,6 @@
     &__menu
         background: $dark
         padding: 4.285rem 0
-    &__map    
-        height: 465px
-        width: 830px
-        margin: auto
-        margin-bottom: 6rem
+    
 
 

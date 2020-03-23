@@ -826,17 +826,24 @@ img {
     font-weight: normal;
     font-size: 1.428rem;
     text-align: center;
-    margin-top: 0; }
-    .footer__title__wrapper {
-      margin: auto;
-      color: #e3b873;
-      font-size: 18px;
-      text-transform: uppercase;
-      font-family: 'Yeseva One', cursive;
-      font-size: 1.428em;
-      display: flex;
-      max-width: 50rem;
-      text-align: center; }
+    margin-top: 0;
+    display: flex; }
+    .footer__title__wrap {
+      flex-direction: column; }
+      .footer__title__wrap__text {
+        color: #e3b873;
+        text-transform: uppercase;
+        font-family: 'Yeseva One', cursive;
+        font-size: 1.428rem;
+        display: flex;
+        max-width: 50rem;
+        text-align: center;
+        margin: auto; }
+  .footer__map {
+    margin: auto;
+    height: 465px;
+    width: 63.07rem;
+    margin-bottom: 6rem; }
   .footer__social {
     text-align: center;
     margin-bottom: 2.5rem; }
@@ -867,11 +874,6 @@ img {
   .footer__menu {
     background: #131313;
     padding: 4.285rem 0; }
-  .footer__map {
-    height: 465px;
-    width: 830px;
-    margin: auto;
-    margin-bottom: 6rem; }
 
 .modal {
   opacity: 0;
@@ -1131,10 +1133,8 @@ img {
     .footer__map {
       width: 90%; }
     .footer__title {
-      display: flex;
-      flex-direction: column;
       flex-direction: column-reverse; }
-      .footer__title__wrapper__text {
+      .footer__title__wrap__text {
         font-size: 0.92rem; }
     .footer__input-group {
       flex-basis: 100%;
