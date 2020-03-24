@@ -1018,14 +1018,16 @@ img {
   .footer__title__wrap__text {
     max-width: 38rem; } }
 
-@media screen and (min-width: 580px) and (max-width: 731px) {
+@media screen and (min-width: 577px) and (max-width: 731px) {
   .modal__dialog {
     max-height: 32.5rem; }
   .modal__input {
     margin-bottom: 1rem;
     height: 2.2rem; }
   .footer__title__wrap__text {
-    max-width: 38rem; } }
+    max-width: 38rem; }
+  .control__button {
+    padding: 1rem 3rem; } }
 
 @media screen and (min-width: 580px) and (max-width: 667px) {
   .modal__dialog {
@@ -1126,7 +1128,9 @@ img {
         padding-top: 1rem; }
     .control__button {
       order: 2;
-      margin-bottom: -2.08rem; }
+      margin-bottom: -2.08rem;
+      width: 20rem;
+      margin: auto; }
     .control__text {
       max-width: 100%;
       font-size: 1.16rem;
@@ -1145,7 +1149,9 @@ img {
   .footer {
     background: #131313; }
     .footer__map {
+      display: block;
       width: 95%;
+      height: 10%;
       margin-bottom: 3rem; }
     .footer__wrap {
       padding: 0.6rem;
@@ -1160,9 +1166,11 @@ img {
       font-size: 1.5rem; }
       .footer__input-group {
         flex-basis: 100%;
-        color: #fff; }
+        color: #fff;
+        margin-bottom: 5.2rem; }
+        .footer__input-group--full-width {
+          margin-bottom: 0.59rem; }
     .footer__button {
-      width: 100%;
       font-size: 1.25rem; }
     .footer__wrapper {
       display: flex;
@@ -1171,12 +1179,24 @@ img {
       display: none; }
     .footer__social {
       margin-bottom: 4.08rem; }
+      .footer__social__instagram {
+        margin-left: 2.3rem; }
   .policy__label--center {
     font-size: 1.333rem;
-    justify-content: flex-start; } }
+    justify-content: flex-start;
+    letter-spacing: 0.015rem;
+    margin-bottom: 2.2rem; } }
 
 @media screen and (max-width: 470px) {
   .footer {
     background: #131313; }
     .footer__title__wrap__text {
       max-width: 25rem; } }
+
+@media screen and (max-width: 414px) {
+  .control__button {
+    width: 95%; } }
+
+@media screen and (max-width: 380px) {
+  .footer__button {
+    width: 95%; } }

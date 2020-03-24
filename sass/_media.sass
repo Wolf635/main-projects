@@ -93,7 +93,7 @@
                 max-width: 38rem
 
 
-@media screen and (min-width: 580px) and ( max-width: 731px )
+@media screen and (min-width: 577px) and ( max-width: 731px )
     .modal
         &__dialog
             max-height: 32.5rem
@@ -103,7 +103,10 @@
     .footer
         &__title__wrap
             &__text
-                max-width: 38rem        
+                max-width: 38rem 
+    .control
+        &__button
+            padding: 1rem 3rem                   
 
 @media screen and (min-width: 580px) and( max-width: 667px )
     .modal
@@ -212,7 +215,9 @@
                 padding-top: 1rem
         &__button
             order: 2  
-            margin-bottom: -2.08rem     
+            margin-bottom: -2.08rem  
+            width: 20rem
+            margin: auto  
         &__text
             max-width: 100%
             font-size: 1.16rem 
@@ -237,7 +242,9 @@
     .footer
         background: $dark
         &__map
+            display: block
             width: 95%
+            height: 10%
             margin-bottom: 3rem
         &__wrap
             padding: 0.6rem  
@@ -254,21 +261,29 @@
             &-group
                 flex-basis: 100%
                 color: $light
+                margin-bottom: 5.2rem
+                &--full-width
+                    margin-bottom: 0.59rem
         &__button
-            width: 100%  
             font-size: 1.25rem
         &__wrapper
+     
             display: flex
             flex-direction: column-reverse
         &__menu
             display: none 
         &__social
-            margin-bottom: 4.08rem    
+            margin-bottom: 4.08rem  
+            &__instagram
+                margin-left: 2.3rem  
+                
     .policy
         &__label
             &--center
                 font-size: 1.333rem
-                justify-content: flex-start                 
+                justify-content: flex-start   
+                letter-spacing: 0.015rem
+                margin-bottom: 2.2rem              
                   
 
 @media screen and ( max-width: 470px ) 
@@ -278,6 +293,15 @@
             &__text
                 max-width: 25rem
 
+@media screen and ( max-width: 414px ) 
+    .control
+        &__button
+            width: 95%
+
+@media screen and ( max-width: 380px )
+    .footer
+        &__button
+            width: 95%
 
     
 
