@@ -58,7 +58,10 @@
         width: 100%  
     .footer
         &__map
-            width: 100%          
+            width: 100%  
+        &__title__wrap
+            &__text
+                max-width: 38rem        
 
 @media screen and (min-width: 800px) and( max-width: 812px )
     .modal
@@ -73,8 +76,6 @@
             margin-bottom: 1rem        
        
 @media screen and ( max-width: 760px )
-    .container
-        width: 90%
     .row
         flex-direction: column
         align-items: center
@@ -86,7 +87,11 @@
             margin-top: 1.42rem
     .footer
         &__map
-            width: 100%        
+            width: 100%  
+        &__title__wrap
+            &__text
+                max-width: 38rem
+
 
 @media screen and (min-width: 580px) and ( max-width: 731px )
     .modal
@@ -95,12 +100,12 @@
         &__input
             margin-bottom: 1rem
             height: 2.2rem
-    .footer__title
-        &__wrap__text
-            width: 38rem  
-               
+    .footer
+        &__title__wrap
+            &__text
+                max-width: 38rem        
 
-@media screen and (min-width: 577px) and( max-width: 667px )
+@media screen and (min-width: 580px) and( max-width: 667px )
     .modal
         &__dialog
             max-height: 28rem
@@ -108,10 +113,7 @@
             margin-bottom: 1rem
             height: 1.8rem   
         &__title
-            margin-bottom: 1.5rem    
-    .control
-        &__button
-            padding: 1rem 3rem         
+            margin-bottom: 1.5rem     
   
 @media screen and ( max-width: 576px ) 
     .container
@@ -195,6 +197,8 @@
             width: 100%
     .col-50
         width: 100%  
+    .col-30
+        margin-bottom: 15rem    
     .control
         background-color: $dark
         &__label
@@ -221,43 +225,59 @@
             &-group 
                 font-size: 1.5rem   
                 color: $light
-                margin-top: 3.5rem
+                margin-top: 3.5rem   
+    .section
+        &__team
+            margin-bottom: 0
+            
+                            
+             
+
+
     .footer
         background: $dark
-        &__button
-            width: 100%
+        &__map
+            width: 95%
+            margin-bottom: 3rem
+        &__wrap
+            padding: 0.6rem  
+            background-color: $dark 
         &__title
             display: flex
             justify-content: center
-            &__wrap__text
-                font-size: 0.8rem
-                width: 22rem  
-                margin-bottom: 0.9rem 
-        &__map
-            width: 100%
-                   
-    .policy
-        &__label
-            margin-left: 0
-            justify-content: flex-start       
-        
+            font-size: 1.666rem
             &__wrap
                 &__text
                     font-size: 0.92rem                   
         &__input
+            font-size: 1.5rem
             &-group
                 flex-basis: 100%
                 color: $light
+        &__button
+            width: 100%  
+            font-size: 1.25rem
+        &__wrapper
+            display: flex
+            flex-direction: column-reverse
+        &__menu
+            display: none 
+        &__social
+            margin-bottom: 4.08rem    
+    .policy
+        &__label
+            &--center
+                font-size: 1.333rem
+                justify-content: flex-start                 
+                  
 
-@media screen and (min-width: 466px) and( max-width: 576px )  
-    .footer__title
-        &__wrap__text
-            width: 30rem             
+@media screen and ( max-width: 470px ) 
+    .footer
+        background: $dark
+        &__title__wrap
+            &__text
+                max-width: 25rem
 
-@media screen and ( max-width: 465px )  
-    .footer__title
-        &__wrap__text
-            max-width: 25rem      
 
     
 

@@ -6,18 +6,21 @@
         max-width: 63.07rem
         margin: auto
         padding: 2.5rem
-        transform: translate(0, -50%) 
-        /** возможно отступ и не нужен будет **/
-        margin-bottom 3.714rem
-    &__title 
-        text-transform: uppercase
+        margin-top: -20rem
+        margin-bottom: 4rem
+    &__title
+        text-transform: uppercase 
         font-family: 'Yeseva One', cursive
         font-style: normal
         font-weight: normal
         display: flex
-        justify-content: center
         font-size: 1.428rem
+        justify-content: center
         margin-top: 0
+        margin-bottom: 4.642rem   
+        &__wrap
+            flex-direction: column
+            
             &__text
                 color: $primary  
                 text-transform: uppercase
@@ -26,12 +29,15 @@
                 display: flex
                 max-width: 50rem
                 text-align: center
-                margin: auto 
+                margin: auto  
+    &__wrapper
+            display: flex
+            flex-direction: column                
     &__map   
         margin: auto 
         height: 465px
         width: 63.07rem
-        margin-bottom: 6rem              
+        margin-bottom: 6rem                 
     &__social
         text-align: center
         margin-bottom: 2.5rem    
