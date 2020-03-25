@@ -83,9 +83,9 @@ $(document). ready(function () {
   });
   $('.modal__form').click(function() {
     if ($("#modal-policy-checkbox").is(':checked')) {
-      $('#send').removeAttr('disabled');
+      $('#close').removeAttr('disabled');
     } else {
-      $('#send').attr('disabled', 'disabled');
+      $('#close').attr('disabled', 'disabled');
     }
   });
 
@@ -154,11 +154,11 @@ $(document). ready(function () {
       userPhone: "Телефон обязателен",
     } 
   });
-  $('.control__form').click(function() {
-    if ($("#policy-checkbox").is(':checked')) {
-      $('#send').removeAttr('disabled');
+  $('.footer__form').click(function() {
+    if ($("#footer-policy-checkbox").is(':checked')) {
+      $('#open').removeAttr('disabled');
     } else {
-      $('#send').attr('disabled', 'disabled');
+      $('#open').attr('disabled', 'disabled');
     }
   });
 
