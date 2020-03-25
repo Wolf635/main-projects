@@ -81,6 +81,13 @@ $(document). ready(function () {
       }
     } 
   });
+  $('.modal__form').click(function() {
+    if ($("#modal-policy-checkbox").is(':checked')) {
+      $('#send').removeAttr('disabled');
+    } else {
+      $('#send').attr('disabled', 'disabled');
+    }
+  });
 
   // маска для телефона
   $('[type=tel]').mask('+7(000) 00-00-000',{placeholder: "+7 (___) __-__-___"});
@@ -111,9 +118,17 @@ $(document). ready(function () {
       userPhone: "Телефон обязателен",
     } 
   });
+  $('.control__form').click(function() {
+    if ($("#policy-checkbox").is(':checked')) {
+      $('#send').removeAttr('disabled');
+    } else {
+      $('#send').attr('disabled', 'disabled');
+    }
+  });
 
 // Footer форма
 
+  // Форма Онлайн контроль
   $('.footer__form').validate({
     errorClass: "invalid",
     errorElement: "em",
@@ -122,7 +137,7 @@ $(document). ready(function () {
       userName: {
         required: true,
         minlength: 2,
-        maxlength: 15,
+        maxlength: 15
       },
       userPhone: "required",
       // правило-объект (блок)
@@ -139,7 +154,13 @@ $(document). ready(function () {
       userPhone: "Телефон обязателен",
     } 
   });
-
+  $('.control__form').click(function() {
+    if ($("#policy-checkbox").is(':checked')) {
+      $('#send').removeAttr('disabled');
+    } else {
+      $('#send').attr('disabled', 'disabled');
+    }
+  });
 
 // Создание яндекс карты
  // Функция ymaps.ready() будет вызвана, когда
