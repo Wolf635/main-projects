@@ -79,15 +79,23 @@ $(document). ready(function () {
         required: "Обязательно укажите email",
         email: "Введите корректный email: name@domain.com"
       }
-    } 
-  });
-  $('.modal__form').click(function() {
-    if ($("#modal-policy-checkbox").is(':checked')) {
-      $('#close').removeAttr('disabled');
-    } else {
-      $('#close').attr('disabled', 'disabled');
+    }, 
+    submitHandler: function(form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          console.log('Ajax сработал. Ответ сервера: '+ response);
+          alert(' Форма отправлена, мы свяжемся с вами через 10 минут.');
+          $(form)[0].reset();
+          modal.removeClass('modal--visible');
+        }
+      });
     }
   });
+
+
 
   // маска для телефона
   $('[type=tel]').mask('+7(000) 00-00-000',{placeholder: "+7 (___) __-__-___"});
