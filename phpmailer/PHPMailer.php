@@ -4220,7 +4220,7 @@ class PHPMailer
             'png' => 'image/png',
             'tiff' => 'image/tiff',
             'tif' => 'image/tiff',
-            'webp' => 'image/webp',
+            'jpg' => 'image/jpg',
             'heif' => 'image/heif',
             'heifs' => 'image/heif-sequence',
             'heic' => 'image/heic',
