@@ -41,8 +41,14 @@
     margin-bottom: 3.5rem
   &__button
     margin-right: 20px
-    padding: 18px 20px
-  
+    padding: 18px 25px
+    &__one
+      padding: 18px 42px
+      &:hover
+        background: rgba(0,0,0,0)
+        color: $primary
+        box-shadow: rgba( $primary, 0.2)
+        transition: all 500ms ease
   &__instagram 
     position: absolute
     left: 0
@@ -91,6 +97,9 @@
     transform: rotate(90deg)
     line-height: 0.8
     font-size: 1.1rem
+    &:hover
+     color: $light
+     transition: all 500ms ease
     &::after
       content: ''
       width: 50px

@@ -14,7 +14,7 @@ const tinypng = require('gulp-tinypng-compress');
     serveSass();
     browserSync.init({
         server: {
-            baseDir: "css/"
+            baseDir: "./"
         }
     });
     watch("./*.html").on('change', browserSync.reload);

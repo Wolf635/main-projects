@@ -397,6 +397,19 @@ em.invalid {
 input.invalid {
   border-bottom: 1px solid tomato; }
 
+.btn {
+  padding: 10px 18px;
+  background-color: #959595;
+  text-transform: uppercase;
+  color: #e3b873;
+  background-color: transparent;
+  border: 2px solid #e3b873;
+  margin-bottom: 1rem; }
+  .btn:hover {
+    color: #fff;
+    cursor: pointer;
+    transition: all 500ms ease; }
+
 .container {
   width: 85%;
   max-width: 1256px;
@@ -409,6 +422,9 @@ input.invalid {
 
 .col-30 {
   flex-basis: 30%; }
+
+.col-33 {
+  flex-basis: auto; }
 
 .col-50 {
   width: 50%; }
@@ -501,6 +517,12 @@ img {
   font-size: 1.075rem;
   color: #e3b873;
   text-transform: uppercase; }
+  .logo__menu {
+    color: #e3b873;
+    text-decoration: none; }
+    .logo__menu:hover {
+      color: #fff;
+      transition: all 500ms ease; }
 
 .nav__item {
   color: #fff;
@@ -513,6 +535,9 @@ img {
 
 .phone {
   color: #e3b873; }
+  .phone:hover {
+    color: #fff;
+    transition: all 500ms ease; }
 
 .contacts__phone {
   margin-right: 45px; }
@@ -560,7 +585,14 @@ img {
     margin-bottom: 3.5rem; }
   .hero__button {
     margin-right: 20px;
-    padding: 18px 20px; }
+    padding: 18px 25px; }
+    .hero__button__one {
+      padding: 18px 42px; }
+      .hero__button__one:hover {
+        background: rgba(0, 0, 0, 0);
+        color: #e3b873;
+        box-shadow: rgba(227, 184, 115, 0.2);
+        transition: all 500ms ease; }
   .hero__instagram {
     position: absolute;
     left: 0;
@@ -609,6 +641,9 @@ img {
     transform: rotate(90deg);
     line-height: 0.8;
     font-size: 1.1rem; }
+    .instagram__link:hover {
+      color: #fff;
+      transition: all 500ms ease; }
     .instagram__link::after {
       content: '';
       width: 50px;
@@ -755,9 +790,9 @@ img {
 
 .card__text {
   position: relative;
-  max-width: 23.5rem;
+  max-width: 20.7rem;
   margin: 0 auto;
-  margin-top: -9.3rem;
+  margin-top: -8rem;
   padding: 1.75rem 2.17rem;
   background-color: #fff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
@@ -776,6 +811,8 @@ img {
   line-height: 1.79rem;
   color: #959595;
   margin-bottom: 2.5rem; }
+  .card__list__team {
+    padding: 0; }
 
 .card__pricatag {
   position: absolute;
@@ -787,7 +824,17 @@ img {
   text-transform: uppercase;
   background-color: #e3b873;
   color: #fff;
-  padding: 1.2rem 2.3rem; }
+  padding: 1.2rem 2.3rem;
+  font-weight: normal; }
+  .card__pricatag__team {
+    width: 100%;
+    font-size: 0.928rem; }
+    .card__pricatag__team::before, .card__pricatag__team::after {
+      content: '';
+      width: 32px;
+      height: 2px;
+      background-color: #e3b873;
+      margin: 150px 10px; }
 
 .card__design {
   width: 16.285rem; }
@@ -795,7 +842,7 @@ img {
 .design {
   margin-top: 50px; }
   .design-project {
-    padding-bottom: 4rem; }
+    padding-bottom: 5rem; }
 
 .section-title__heading {
   margin: 4rem 0 1.45rem 0; }
@@ -816,12 +863,80 @@ img {
   flex-basis: 31.5%; }
 
 .section__team {
-  background: #131313;
-  margin-bottom: 14rem; }
+  margin-bottom: 20rem; }
+
+.team__text {
+  width: 32.22rem;
+  margin: auto;
+  text-align: center; }
+  .team__text__image {
+    display: flex;
+    justify-content: center; }
+
+.team__card__image {
+  position: absolute;
+  margin: -3.8%; }
+
+.team__description {
+  width: 40rem;
+  margin: auto;
+  text-align: center; }
+  .team__description__text {
+    font-weight: normal;
+    font-size: 1.428rem;
+    line-height: 2.428rem; }
+    .team__description__text::before, .team__description__text::after {
+      content: '';
+      width: 32px;
+      height: 2px;
+      background-color: #e3b873;
+      margin: 0 10px; }
+
+.team__title {
+  text-transform: uppercase;
+  font-size: 1.428rem;
+  font-family: 'Yeseva One', cursive; }
+  .team__title__text {
+    line-height: 1.928rem;
+    font-size: 1.428rem;
+    margin-bottom: 5.857rem; }
+
+.col-33 {
+  display: flex; }
+
+.row__team {
+  justify-content: space-around; }
+
+.card__team {
+  position: relative;
+  font-size: 1.264rem;
+  list-style: none;
+  text-align: center;
+  max-width: 16.8rem;
+  margin-top: -6rem;
+  padding: 1rem 2rem;
+  margin-bottom: 5.3rem; }
+
+.card__title {
+  font-size: 1.285rem;
+  font-family: 'Yeseva One', cursive;
+  padding-top: 0.1rem; }
+
+.card__list__team {
+  margin-bottom: 1.6rem; }
+
+.card__item__team {
+  text-align: center;
+  font-size: 1.285rem;
+  list-style: none;
+  font-family: 'Futura Book', sans-serif; }
 
 .footer {
   background: #131313 url("../img/footer-bg.jpg") no-repeat center/cover;
   padding-top: 3rem; }
+  .footer__contacts__phone {
+    color: #e3b873;
+    text-decoration: none; }
   .footer__wrap {
     background-color: #181818;
     max-width: 63.07rem;
@@ -858,8 +973,7 @@ img {
   .footer__map {
     margin: auto;
     height: 465px;
-    width: 63.07rem;
-    margin-bottom: 6rem; }
+    width: 63.07rem; }
   .footer__social {
     text-align: center;
     margin-bottom: 2.5rem; }
@@ -889,7 +1003,11 @@ img {
     padding: 1.285rem 4.785rem; }
   .footer__menu {
     background: #131313;
-    padding: 4.285rem 0; }
+    padding: 2.4rem 0; }
+
+.button--up {
+  background-color: transparent;
+  border: none; }
 
 .modal {
   opacity: 0;
@@ -1098,6 +1216,9 @@ img {
     .hero__button {
       width: 100%;
       font-size: 1.08rem; }
+      .hero__button__one {
+        width: 100%;
+        font-size: 1.2rem; }
   .button--outline {
     margin-top: 1.8rem; }
   .section-title__heading {
