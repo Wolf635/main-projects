@@ -458,7 +458,16 @@ body {
     font-display: swap;
     text-transform: uppercase;
     line-height: 138.6%;
-    font-size: 1.928rem; }
+    font-size: 1.928rem;
+    font-weight: normal; }
+    .section-title__heading--control {
+      margin: 4rem 0 1.15rem 0;
+      font-size: 1.4rem;
+      font-weight: normal; }
+    .section-title__heading--types {
+      font-size: 1.4rem; }
+    .section-title__heading--design {
+      font-size: 1.4rem; }
     .section-title__heading--primary {
       color: #e3b873; }
   .section-title__word {
@@ -733,7 +742,7 @@ img {
     background-color: rgba(0, 0, 0, 0.8); }
 
 .control__text {
-  width: 40.785rem;
+  width: 40.685rem;
   margin: auto;
   margin-bottom: 4.285rem;
   text-align: center;
@@ -772,8 +781,8 @@ img {
   margin-bottom: -7px; }
 
 .control__button {
-  padding: 1.2857rem 4.785rem;
-  font-size: 1.25rem; }
+  padding: 1.2857rem 4.585rem;
+  font-size: 1.05rem; }
 
 .control__policy {
   flex-basis: 100%;
@@ -829,23 +838,14 @@ img {
   .card__pricatag__team {
     width: 100%;
     font-size: 0.928rem; }
-    .card__pricatag__team::before, .card__pricatag__team::after {
-      content: '';
-      width: 32px;
-      height: 2px;
-      background-color: #e3b873;
-      margin: 150px 10px; }
 
 .card__design {
   width: 16.285rem; }
 
-.design {
-  margin-top: 50px; }
-  .design-project {
-    padding-bottom: 5rem; }
-
-.section-title__heading {
-  margin: 4rem 0 1.45rem 0; }
+.design-project {
+  padding-bottom: 5rem;
+  margin-top: 5rem;
+  font-size: 1.4rem; }
 
 .section__text__design {
   text-align: center;
@@ -878,24 +878,28 @@ img {
   margin: -3.8%; }
 
 .team__description {
-  width: 40rem;
+  width: 40.4rem;
   margin: auto;
   text-align: center; }
   .team__description__text {
     font-weight: normal;
     font-size: 1.428rem;
     line-height: 2.428rem; }
-    .team__description__text::before, .team__description__text::after {
+    .team__description__text::before {
       content: '';
-      width: 32px;
+      display: block;
+      margin: auto;
+      margin-bottom: 2.5rem;
+      width: 55px;
       height: 2px;
       background-color: #e3b873;
-      margin: 0 10px; }
+      border-radius: 30px; }
 
 .team__title {
   text-transform: uppercase;
   font-size: 1.428rem;
-  font-family: 'Yeseva One', cursive; }
+  font-family: 'Yeseva One', cursive;
+  font-weight: normal; }
   .team__title__text {
     line-height: 1.928rem;
     font-size: 1.428rem;
@@ -920,10 +924,11 @@ img {
 .card__title {
   font-size: 1.285rem;
   font-family: 'Yeseva One', cursive;
-  padding-top: 0.1rem; }
+  padding-top: 0.1rem;
+  font-weight: normal; }
 
 .card__list__team {
-  margin-bottom: 1.6rem; }
+  margin-bottom: 1.75rem; }
 
 .card__item__team {
   text-align: center;
@@ -954,7 +959,7 @@ img {
     font-size: 1.428rem;
     justify-content: center;
     margin-top: 0;
-    margin-bottom: 4.642rem; }
+    margin-bottom: 3.142rem; }
     .footer__title__wrap {
       flex-direction: column; }
       .footer__title__wrap__text {
@@ -962,9 +967,9 @@ img {
         text-transform: uppercase;
         font-family: 'Yeseva One', cursive;
         font-display: swap;
-        font-size: 1.428rem;
+        font-size: 1.228rem;
         display: flex;
-        max-width: 50rem;
+        max-width: 38rem;
         text-align: center;
         margin: auto; }
   .footer__wrapper {

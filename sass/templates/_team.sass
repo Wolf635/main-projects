@@ -15,24 +15,29 @@
             margin: -3.8%
 
     &__description
-            width: 40rem
+            width: 40.4rem
             margin: auto
             text-align: center
             &__text
                 font-weight: normal
                 font-size: 1.428rem     
-                line-height: 2.428rem   
-                &::before, &::after
+                line-height: 2.428rem  
+                &::before
                     content: ''
-                    width: 32px
+                    display: block
+                    margin: auto
+                    margin-bottom: 2.5rem
+                    width: 55px
                     height: 2px
                     background-color: $primary
-                    margin: 0 10px        
+                    border-radius: 30px 
+                        
                 
     &__title
         text-transform: uppercase
         font-size: 1.428rem
         font-family: 'Yeseva One', cursive   
+        font-weight: normal
         &__text
             line-height: 1.928rem 
             font-size: 1.428rem 
@@ -57,9 +62,10 @@
         font-size: 1.285rem
         font-family: 'Yeseva One', cursive
         padding-top: 0.1rem
+        font-weight: normal
     &__list
         &__team
-            margin-bottom: 1.6rem    
+            margin-bottom: 1.75rem    
     &__item
         &__team 
                 text-align: center
