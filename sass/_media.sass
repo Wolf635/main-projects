@@ -46,8 +46,9 @@
             width: 100%              
 
 @media screen and ( max-width: 906px )
-    .card__title
-        max-width 2.7rem
+    .card
+        &__text
+            max-width: 18.7rem
     .row__slide
         flex-direction: column
     .col-50
@@ -269,6 +270,7 @@
                 margin-top: 2.8rem  
             &--group
                 font-size: 1.485rem 
+                color: $light
     .section
         &__team
             margin-bottom: 0
@@ -361,22 +363,38 @@
             &--team
                 width: 25.4rem            
 
-@media screen and (min-width: 320px) and( max-width: 375px )
+@media screen and (min-width: 320px) and( max-width: 349px )
     .team
         &__title
             &__text
-                width: 24.4rem
+                width: 24.1rem
         &__text
-            width: 25.1rem        
+            width: 100%        
     .card
         &__image
             &--team
                     width: 21.6rem 
         &__team
             left: 0.9rem  
-            margin-top: -6.43rem                     
+            margin-top: -6.43rem              
 
-@media screen and ( min-width: 470px) and( max-width: 765px )
+@media screen and ( min-width: 350px) and( max-width: 375px )  
+    .col-33
+            margin-left: 2.2rem     
+    .card 
+        &__image
+            &--team
+                width: 24rem
+        &__team
+            left: 2.1rem       
+
+@media screen and ( min-width: 620px) and( max-width: 760px )
+    .team
+        &__card
+            &__image
+                margin: -8%
+
+@media screen and ( min-width: 470px) and( max-width: 620px )
 
     .team
         &__card

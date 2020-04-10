@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Yeseva+One&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Турецкий ремонт</title>
@@ -47,7 +47,7 @@
                 </nav>
                 <div class="contacts menu__contacts">
                     <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-                    <button class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+                    <button onclick="ym('61348699', 'reachGoal', 'button'); return true;" class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
                 </div>
             </div>
         </div>
@@ -228,7 +228,8 @@
                     <!-- /.section-title__image -->
                 </div>
                 <!-- /.section-title -->
-                <div class="control__video video">
+                <div class="control__video video" id="player">
+                    <script src="https://www.youtube.com/iframe_api" ></script>
                     <img src="img/play-icon.svg" alt="play icon" class="video__play">
                 </div>
                 <!-- /.control__video video -->
@@ -587,7 +588,7 @@
         <div class="container">
             <div class="footer__wrap">
                 <h3 class="footer__title">Остались вопросы?</h3>
-                <form action="send.php" method="POST" class="form footer__form">
+                <form action="send.php" method="POST" onsubmit="yaCounter61348699.reachGoal('footer__form'); return true;" class="form footer__form">
                     <div class="input-group footer__input-group">
                         <label for="user-name" class="label form__label label--light">Имя</label>
                         <input type="text" autocomplete="off" name="userName"
@@ -634,8 +635,7 @@
                     <!-- /.footer__title__wrap -->
                     <div class="map footer__map" id="map"></div>
                 </div>
-
-                <button class="button--up button--up--visible">
+                <button class="button--up button--up--visible" id="button--up">
                     <img src="img/arrow-icon.png" alt="Кнопка вверх">
                 </button>
             </div>
@@ -700,7 +700,7 @@
     </div>
     <!-- /.modal -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script src="js/swiper.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
@@ -709,3 +709,4 @@
 </body>
 
 </html>
+<!-- onclick="ym('61348699', 'reachGoal', 'button'); return true;" -->

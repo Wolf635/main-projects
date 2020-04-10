@@ -15,8 +15,8 @@ $(document). ready(function () {
 
 $(window).scroll(function () {
   // Если отступ сверху больше 750px то показываем кнопку "Наверх"
-  if ($(this).scrollTop() > 750) {
-    $('.button--up').addClass('button--up--visible');  
+  if ($(this).scrollTop() > 750) {  
+     $('.button--up').addClass('button--up--visible');
     $('.button--up').fadeIn();
   } else {
       $('.button--up').fadeOut();
@@ -235,7 +235,25 @@ $('.button--up').click(function () {
       $('#open').attr('disabled', 'disabled');
     }
   })
+  var player;
+  $('.video__play').on('click', function onYouTubeIframeAPIReady() {
+    player = new YT.Player('player', {
+      height: '460',
+      width: '100%',
+      videoId: '-yUyRAO7HAQ',
+      events: {
+        'onReady': videoPlay,
+      }
+    });
+  }
+)
+function videoPlay(event) { 
+  event.target.playVideo();
+}
+
 });
+
+
 
 
 
@@ -272,3 +290,4 @@ $('.button--up').click(function () {
         .add(myPlacemark);
       
   }); */
+  
