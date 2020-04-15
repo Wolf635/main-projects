@@ -323,7 +323,8 @@ template {
   border: none;
   border-radius: 2px;
   text-transform: uppercase;
-  font-size: 0.956rem; }
+  font-size: 0.956rem;
+  outline: none; }
   .button:hover {
     cursor: pointer; }
   .button--primary {
@@ -331,7 +332,8 @@ template {
     color: #fff;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     transition: box-shadow 0.2s;
-    padding: 11px 19px; }
+    padding: 11px 19px;
+    outline: none; }
     .button--primary:hover {
       box-shadow: none; }
   .button--outline {
@@ -350,7 +352,8 @@ template {
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   font-size: 1.285rem;
   color: #fff;
-  padding: 0.5rem 0; }
+  padding: 0.5rem 0;
+  outline: none; }
   .input-group {
     position: relative; }
   .input--light::-webkit-input-placeholder {
@@ -404,7 +407,8 @@ input.invalid {
   color: #e3b873;
   background-color: transparent;
   border: 2px solid #e3b873;
-  margin-bottom: 1rem; }
+  margin-bottom: 1rem;
+  outline: none; }
   .btn:hover {
     color: #fff;
     cursor: pointer;
@@ -498,7 +502,10 @@ body {
       margin: 0 10px; }
 
 img {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover; }
 
 .row {
   display: flex;
@@ -806,6 +813,15 @@ img {
   padding: 1.75rem 2.17rem;
   background-color: #fff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
+  .card__text-card__team {
+    position: relative;
+    max-width: 85%;
+    margin: 0 auto;
+    margin-top: -6.8rem;
+    padding: 1.2rem 2rem;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03); }
 
 .card__title {
   font-family: 'Yeseva One', cursive;
@@ -1079,6 +1095,11 @@ img {
   margin-bottom: 5rem; }
 
 @media screen and (max-width: 1366px) {
+  .card__text {
+    max-width: 90%; }
+  .card__image--team {
+    -o-object-fit: contain;
+    object-fit: contain; }
   .section-title {
     font-size: 0.95rem; } }
 
@@ -1108,6 +1129,10 @@ img {
   .hero__button {
     padding: 20px 24px; } }
 
+@media screen and (min-width: 992px) {
+  .card__image--team {
+    max-width: 19.6rem; } }
+
 @media screen and (max-width: 992px) {
   .nav {
     display: none; }
@@ -1119,8 +1144,6 @@ img {
     width: 100%; } }
 
 @media screen and (max-width: 906px) {
-  .card__text {
-    max-width: 18.7rem; }
   .row__slide {
     flex-direction: column; }
   .col-50 {
@@ -1133,6 +1156,10 @@ img {
     width: 100%; }
   .footer__title__wrap__text {
     max-width: 38rem; } }
+
+@media screen and (min-width: 760px) and (max-width: 837px) {
+  .card__pricatag {
+    padding: 1.2rem 1.55rem; } }
 
 @media screen and (min-width: 800px) and (max-width: 812px) {
   .modal__dialog {
@@ -1202,7 +1229,7 @@ img {
     margin-top: -11.93rem;
     padding: 1.45rem 2.46rem; }
   .card__pricatag {
-    bottom: -1.4rem;
+    bottom: -1rem;
     padding: 1.2rem 2.5rem; }
     .card__pricatag__team {
       font-size: 1.1rem; }
@@ -1211,9 +1238,8 @@ img {
     .card__list__team {
       margin-bottom: 2.65rem; }
   .card__title__team {
-    font-size: 1.185em; }
+    font-size: 1.5rem; }
   .card__team {
-    left: 2.6rem;
     margin-top: -7.53rem;
     padding: 1.45rem 2.46rem;
     max-width: 19.6rem; }
@@ -1380,38 +1406,35 @@ img {
     color: #fff;
     margin-bottom: 1.1rem; }
     .team__title__text {
-      width: 27.6rem;
+      width: 100%;
       font-size: 1.228rem;
       color: #fff;
       margin-top: 1.5rem;
       margin-bottom: 6.557rem; }
   .team__card {
-    margin-bottom: 3.8rem; }
-  .team__text {
-    width: 27.9rem; }
-  .team__card__image {
-    margin: -14.3%; }
-  .card__image--team {
-    width: 25.4rem; } }
-
-@media screen and (min-width: 320px) and (max-width: 349px) {
-  .team__title__text {
-    width: 24.1rem; }
+    margin-bottom: 10.5rem; }
   .team__text {
     width: 100%; }
-  .card__image--team {
-    width: 21.6rem; }
+  .team__card__image {
+    margin: -14.3%;
+    padding: 0.833rem; } }
+
+@media screen and (min-width: 320px) and (max-width: 349px) {
+  .team__text {
+    width: 100%; }
   .card__team {
     left: 0.9rem;
     margin-top: -6.43rem; } }
 
-@media screen and (min-width: 350px) and (max-width: 375px) {
+@media screen and (min-width: 320px) and (max-width: 364px) {
+  .team__card__image {
+    display: none; } }
+
+@media screen and (min-width: 360px) and (max-width: 375px) {
   .col-33 {
     margin-left: 2.2rem; }
-  .card__image--team {
-    width: 24rem; }
   .card__team {
-    left: 2.1rem; } }
+    left: 2.8rem; } }
 
 @media screen and (min-width: 620px) and (max-width: 760px) {
   .team__card__image {
@@ -1423,7 +1446,9 @@ img {
 
 @media screen and (max-width: 414px) {
   .control__button {
-    width: 100%; }
+    width: 100%; } }
+
+@media screen and (max-width: 384px) {
   .col-33 {
     margin-left: auto; } }
 

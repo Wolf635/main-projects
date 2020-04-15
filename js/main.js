@@ -105,13 +105,12 @@ $('.button--up').click(function () {
       $('#close').attr('disabled', 'disabled');
     }
   })
-       
-
-
+  
+  
 
 
   // маска для телефона
-  $('[type=tel]').mask('+7(000) 00-00-000',{placeholder: "+7 (___) __-__-___"});
+  $('[type=tel]').mask('+7(000) 00-00-000',{placeholder: "Ваш номер телефона:"});
 
   // карта в footer 
   var isAddedMap = false;
@@ -198,6 +197,7 @@ $('.button--up').click(function () {
         email: true
       },
       userquestion: {
+        required: true, 
         minlength: 2,
         maxlength: 100
       }
@@ -210,6 +210,7 @@ $('.button--up').click(function () {
         minlength: "Имя не короче двух символов",
         maxlength: "Имя не более 15 символов"
       },
+      userquestion: "Напишите свой вопрос",
       userPhone: "Телефон обязателен",
     },
     submitHandler: function(form) {
@@ -251,7 +252,36 @@ function videoPlay(event) {
   event.target.playVideo();
 }
 
+// Прокрутка страницы вниз
+$("body").on('click', '[href*="#scroll_bottom"]', function(e){
+  var fixed_offset = 100;
+  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+  e.preventDefault();
 });
+ // Прокрутка до projects
+$("body").on('click', '[href*="#projects"]', function(e){
+  var fixed_offset = 100;
+  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+  e.preventDefault();
+});
+// Прокрутка до team 
+$("body").on('click', '[href*="#team"]', function(e){
+  var fixed_offset = 100;
+  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+  e.preventDefault();
+});
+// Прокрутка до contacts
+$("body").on('click', '[href*="#contacts"]', function(e){
+  var fixed_offset = 100;
+  $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
+  e.preventDefault();
+});
+});
+
+
+
+
+ 
 
 
 

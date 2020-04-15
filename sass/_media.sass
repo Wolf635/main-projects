@@ -1,4 +1,10 @@
 @media screen and ( max-width: 1366px )
+    .card
+        &__text
+            max-width: 90%
+        &__image
+            &--team
+                object-fit: contain    
     .section-title
         font-size: 0.95rem
    
@@ -29,6 +35,12 @@
     .hero__button
         padding: 20px 24px    
 
+@media screen and ( min-width: 992px )   
+    .card
+        &__image
+            &--team
+                max-width: 19.6rem                 
+
 @media screen and ( max-width: 992px ) 
     .nav
         display: none
@@ -36,7 +48,7 @@
         &__instagram
             display: none
         &__content
-            margin-left: 0
+            margin-left: 0        
     .types
         .card
             &__title
@@ -46,9 +58,6 @@
             width: 100%              
 
 @media screen and ( max-width: 906px )
-    .card
-        &__text
-            max-width: 18.7rem
     .row__slide
         flex-direction: column
     .col-50
@@ -62,7 +71,13 @@
             width: 100%  
         &__title__wrap
             &__text
-                max-width: 38rem        
+                max-width: 38rem      
+
+@media screen and (min-width: 760px) and( max-width: 837px )
+    .card 
+        &__pricatag
+            padding: 1.2rem 1.55rem
+
 
 @media screen and (min-width: 800px) and( max-width: 812px )
     .modal
@@ -148,7 +163,7 @@
             margin-top: -11.93rem 
             padding: 1.45rem 2.46rem
         &__pricatag
-            bottom: -1.4rem
+            bottom: -1rem
             padding: 1.2rem 2.5rem  
             &__team
                 font-size: 1.1rem  
@@ -158,10 +173,9 @@
                 margin-bottom: 2.65rem
         &__title
             &__team
-                font-size: 1.185em
+                font-size: 1.5rem //1.185em
          
-        &__team
-            left: 2.6rem    
+        &__team   
             margin-top: -7.53rem     
             padding: 1.45rem 2.46rem
             max-width: 19.6rem
@@ -346,47 +360,52 @@
             color: $light
             margin-bottom: 1.1rem
             &__text
-                width: 27.6rem 
+                width: 100% //27.6rem
                 font-size: 1.228rem  
                 color: $light
                 margin-top: 1.5rem
                 margin-bottom: 6.557rem
         &__card
-            margin-bottom: 3.8rem        
+            margin-bottom: 10.5rem  //3.8rem        
         &__text
-            width: 27.9rem    
+            width: 100% //27.9   
         &__card
             &__image
-                margin: -14.3%              
+                margin: -14.3%    
+                padding: 0.833rem          
     .card
         &__image 
             &--team
-                width: 25.4rem            
+                  //width: 23.8rem        
 
 @media screen and (min-width: 320px) and( max-width: 349px )
     .team
-        &__title
-            &__text
-                width: 24.1rem
         &__text
             width: 100%        
     .card
         &__image
             &--team
-                    width: 21.6rem 
+                     //width: 21.6rem 
         &__team
             left: 0.9rem  
-            margin-top: -6.43rem              
+            margin-top: -6.43rem       
 
-@media screen and ( min-width: 350px) and( max-width: 375px )  
+
+@media screen and (min-width: 320px) and( max-width: 364px )
+    .team
+        &__card
+            &__image
+                display: none
+
+@media screen and ( min-width: 360px) and( max-width: 375px )  
     .col-33
             margin-left: 2.2rem     
     .card 
         &__image
             &--team
-                width: 24rem
+                  //width: 25.3rem
         &__team
-            left: 2.1rem       
+            left: 2.8rem       
 
 @media screen and ( min-width: 620px) and( max-width: 760px )
     .team
@@ -404,6 +423,7 @@
     .control
         &__button
             width: 100%
+@media screen and ( max-width: 384px )            
     .col-33
          margin-left: auto 
 @media screen and ( max-width: 380px )
