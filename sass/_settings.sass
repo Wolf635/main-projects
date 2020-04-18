@@ -28,32 +28,34 @@ body
       font-size: 1.928rem
       font-weight: normal
       &--control
-        margin: 4rem 0 1.15rem 0   
+        margin: 1.5rem 0 0.95rem 0   
         font-size: 1.4rem   
         font-weight: normal
       &--types
         font-size: 1.4rem   
       &--design
-        font-size: 1.4rem    
+        font-size: 1.428rem    
                         
       &--primary
         color: $primary
+        letter-spacing: -0.07em
     &__word
       display: flex 
       align-items: center
       &::after
         content: ''
-        width: 100px
+        width: 93.5px
         height: 2px
         background-color: $primary
-        margin-left: 2rem
+        margin-left: 2.4rem
     &__text  
       font-size: 1.28rem
-      margin-bottom: 0
+      margin-bottom: 1.4rem
       line-height: 2.07rem
       max-width: 34rem  
       font-family: 'Futura Book', sans-serif 
       font-display: swap
+      letter-spacing: 0.001em
     &__image
       display: flex
       justify-content: center
@@ -66,8 +68,8 @@ body
         margin: 0 10px
 img
   max-width: 100% 
-  height: auto
-  object-fit: cover
+  //height: fit-content
+  //object-fit: none
 .row
     display: flex
     align-items: flex-start

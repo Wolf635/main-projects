@@ -1,25 +1,23 @@
 @media screen and ( max-width: 1366px )
     .card
         &__text
-            max-width: 90%
+            max-width 90% //// тут 
         &__image
             &--team
-                object-fit: contain    
+                object-fit contain    
     .section-title
         font-size: 0.95rem
    
 @media screen and ( max-width: 1326px )
-    .logo
-        font-size: 0.95rem
     .contacts_menu__contacts 
         display: flex
     .contacts__phone    
         margin-right: 10px 
         align-items: center
     .hero__text
-        margin-bottom: 3rem  
+        margin-bottom 3rem  // откючен
     .hero__button
-        padding: 20px 27px
+        padding 20px 27px // ток 
 
 @media screen and ( max-width: 1200px )
     html 
@@ -34,6 +32,11 @@
         padding-bottom: 36px
     .hero__button
         padding: 20px 24px    
+
+@media screen and (min-width: 1048px) and( max-width: 1114px )     
+    .card
+        &__text
+            min-width: 22.3rem   
 
 @media screen and ( min-width: 992px )   
     .card
@@ -89,9 +92,18 @@
         &__policy
             margin-bottom: 0
         &__title
-            margin-bottom: 1rem        
-       
-@media screen and ( max-width: 760px )
+            margin-bottom: 1rem      
+
+@media screen and (min-width: 400px) and ( max-width: 860px )   
+    .row
+        &__team
+            flex-direction: column
+            text-align: center
+    .col-33
+        margin: 0 auto    
+        margin-bottom: 5rem    
+
+@media screen and ( max-width: 768px )
     .row
         flex-direction: column
         align-items: center
@@ -107,6 +119,9 @@
         &__title__wrap
             &__text
                 max-width: 38rem
+    .card
+        &__team
+            margin-bottom: 6rem            
 
 
 @media screen and (min-width: 577px) and ( max-width: 731px )
@@ -160,15 +175,17 @@
         &__text
             max-width: 22.4rem
             margin-left: 0   
-            margin-top: -11.93rem 
+            margin-top: -12.23rem 
             padding: 1.45rem 2.46rem
         &__pricatag
             bottom: -1rem
             padding: 1.2rem 2.5rem  
+            animation: none
             &__team
                 font-size: 1.1rem  
         &__list
             line-height: 1.9rem 
+            margin-bottom: 2.8rem
             &__team
                 margin-bottom: 2.65rem
         &__title
@@ -176,9 +193,11 @@
                 font-size: 1.5rem //1.185em
          
         &__team   
-            margin-top: -7.53rem     
-            padding: 1.45rem 2.46rem
-            max-width: 19.6rem
+            margin-top: -6.93rem   
+            margin-bottom: 6.6rem
+            padding: 1.45rem 2.06rem
+            max-width: 19.3rem
+            margin-left: auto
         &__item
             &__team
                 font-size: 1.485rem    
@@ -212,12 +231,15 @@
     .section-title
         &__heading
             font-size: 1.85rem 
-            margin-top: 4.233rem
-            margin-bottom: 1.4rem  
+            margin-top: 0.833rem
+            margin-bottom: 1.65rem  
             color: $light  
             line-height: 145%
             &--design
                 color: $light
+                margin-bottom: 1.15rem
+            &--primary
+                color: $primary    
             &--types
                 color: $dark    
         &__text
@@ -235,8 +257,9 @@
             &__design
                 max-width: 25rem
                 font-size: 1.25rem
-                margin-top: 1.4rem
+                margin-top: 1.45rem
                 color: $light
+                line-height: 1.7rem
     .design-project 
         background-color: $dark
 
@@ -252,16 +275,22 @@
         display: flex  
     .control
         background-color: $dark
+        margin-bottom: 4.7rem
         &__label
             color: rgba(255, 255, 255, 0.5) 
         &__policy
             margin-top: 0
             &-label
                 justify-content: flex-start
-                margin-bottom: 5.1rem 
+                margin-bottom: 5.3rem 
                 color: $light   
                 padding-top: 1rem
                 font-size: 1.342rem
+                margin-left: 0  
+        &__video
+            min-height: 18.3rem 
+            margin-bottom: 1.128rem             
+
         &__button
             order: 2  
             margin-bottom: -2.08rem  
@@ -281,8 +310,10 @@
             &-group 
                 font-size: 1.5rem   
                 color: $light
-                margin-top: 2.8rem  
-            &--group
+                margin-top: 2.6rem  
+                &--form
+                    margin-top: 5.5rem
+            &__group
                 font-size: 1.485rem 
                 color: $light
     .section
@@ -292,28 +323,31 @@
             margin-top: -5rem
     .footer
         background: $dark
+        padding-top: 0 
+        margin-top: -1.3rem
         &__map
             display: block
             width: 100%
-            height: 10%
             margin-bottom: 3rem
         &__wrap
             padding: 0 
             background-color: $dark 
             margin-top: 0
+            margin-bottom: 4rem
         &__title
             display: flex
             justify-content: center
             font-size: 1.666rem
-            margin-bottom: 4.642rem
+            margin-bottom: 1.542rem
             &__wrap
                 &__text
                     max-width: 25.8rem
-                    font-size: 1.22rem   
+                    font-size: 1.43rem   
                     letter-spacing: 0.030rem  
-                    line-height: 2.3rem 
+                    line-height: 2.2rem 
                     margin-bottom: 0.2rem  
-
+            &__form
+                margin-bottom: 4.442rem
         &__input
             font-size: 1.5rem
             &-group
@@ -321,7 +355,7 @@
                 color: $light
                 margin-bottom: 5.2rem
                 &--full-width
-                    margin-bottom: 0.59rem
+                    margin-bottom: 0.49rem
         &__button
             font-size: 1.25rem
         &__wrapper
@@ -336,6 +370,9 @@
                 width: 3rem
             &__email 
                 width: 3rem   
+        &__contacts
+            &__phone
+                letter-spacing: 0.065rem        
                 
     .policy
         &__label
@@ -343,12 +380,19 @@
                 font-size: 1.333rem
                 justify-content: flex-start   
                 letter-spacing: 0.015rem
-                margin-bottom: 2.2rem    
+                margin-bottom: 2.2rem 
+                margin-left: 0  
     .swiper
         &-slide
-            margin-top: 3.042rem
+            margin-top: 1.242rem
             &__text
-                margin-bottom: 2.6rem                    
+                margin-bottom: 2.6rem  
+                flex-basis: 47.6%
+            &__heading
+                font-size: 1.085rem 
+                margin-bottom: 0.83rem     
+            &__value
+                letter-spacing: 0.03rem                    
     .team
         &__description
             display: none
@@ -365,14 +409,16 @@
                 color: $light
                 margin-top: 1.5rem
                 margin-bottom: 6.557rem
+                line-height: 1.828rem
         &__card
-            margin-bottom: 10.5rem  //3.8rem        
+            margin-bottom: 2.4rem        
         &__text
             width: 100% //27.9   
         &__card
             &__image
-                margin: -14.3%    
-                padding: 0.833rem          
+                margin: -16.2%    
+                padding: 0.833rem  
+                margin-left: -17.4%        
     .card
         &__image 
             &--team
@@ -386,27 +432,26 @@
         &__image
             &--team
                      //width: 21.6rem 
-        &__team
-            left: 0.9rem  
+        &__team 
             margin-top: -6.43rem       
 
 
-@media screen and (min-width: 320px) and( max-width: 364px )
+@media screen and (min-width: 320px) and( max-width: 350px )
     .team
         &__card
             &__image
                 display: none
-
-@media screen and ( min-width: 360px) and( max-width: 375px )  
+@media screen and ( min-width: 320px) and( max-width: 357px )
     .col-33
-            margin-left: 2.2rem     
-    .card 
-        &__image
-            &--team
-                  //width: 25.3rem
-        &__team
-            left: 2.8rem       
-
+            margin auto // пок убраь
+            
+@media screen and ( min-width: 360px) and( max-width: 374px )  
+    .col-33
+            margin-left: 2.2rem  
+    .team
+        &__card
+            &__image
+                    margin-left: -14.3%
 @media screen and ( min-width: 620px) and( max-width: 760px )
     .team
         &__card
@@ -423,6 +468,7 @@
     .control
         &__button
             width: 100%
+            margin-bottom: -2.18rem
 @media screen and ( max-width: 384px )            
     .col-33
          margin-left: auto 
@@ -430,6 +476,8 @@
     .footer
         &__button
             width: 100%
+    .col-33
+            margin-left: auto        
     
 
     

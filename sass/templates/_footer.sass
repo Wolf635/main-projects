@@ -11,7 +11,7 @@
         margin: auto
         padding: 2.5rem
         margin-top: -20rem
-        margin-bottom: 4rem    
+        margin-bottom: 2.4rem    
     &__title //wrapper
         text-transform: uppercase 
         font-family: 'Yeseva One', cursive
@@ -20,29 +20,38 @@
         font-weight: normal
         display: flex
         font-size: 1.428rem
+        text-align: center
+        margin: auto
         justify-content: center
         margin-top: 0
-        margin-bottom: 3.142rem   
-        &__wrap //title
-            flex-direction: column    
-            &__text
+        margin-bottom: 3.142rem  
+        max-width: 38rem 
+        color: $primary
+        &__wrap 
+            max-width: 38rem
+            font-display: swap
+            display: flex          
+            text-align: center
+            margin: auto
+            &__text 
                 color: $primary  
                 text-transform: uppercase
-                font-family: 'Yeseva One', cursive
-                font-display: swap
-                font-size: 1.228rem
-                display: flex
-                max-width: 38rem 
-                text-align: center
-                margin: auto  
-
+                font-family: 'Yeseva One', cursive  
+                font-size: 1.428rem
+                font-style: normal
+                font-weight: normal
+                line-height: 1.8rem
+                margin-bottom: 1.8rem
+        &__form
+            color: $light       
     &__wrapper
             display: flex
             flex-direction: column                
     &__map   
         margin: auto 
         height: 465px
-        width: 63.07rem                
+        width: 66.07rem 
+        margin-bottom: 5.8rem               
     &__social
         text-align: center
         margin-bottom: 2.5rem    
@@ -69,7 +78,9 @@
         margin-bottom: 3.6rem
     &__button
         margin: auto    
-        padding: 1.285rem 4.785rem                
+        padding: 1.185rem 4.385rem
+        font-weight: 500
+        font-size: 1.071rem               
     &__menu
         background: $dark
         padding: 2.4rem 0 

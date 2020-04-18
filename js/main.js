@@ -64,6 +64,10 @@ $('.button--up').click(function () {
         maxlength: 15
       },
       userPhone: "required",
+
+      modalPolicyСheckbox: {
+        required: true,
+      },
       // правило-объект (блок)
       userEmail: {
         required: true,
@@ -80,8 +84,11 @@ $('.button--up').click(function () {
       userEmail: {
         required: "Обязательно укажите email",
         email: "Введите корректный email: name@domain.com"
+      },
+      modalPolicyСheckbox: {
+        required: "Примите пользовательское соглашение",
       }
-    }, 
+    },
     submitHandler: function(form) {
       $.ajax({
         type: "POST",
@@ -97,14 +104,19 @@ $('.button--up').click(function () {
       }
       });
     }
-  });
-  $('.modal__form').click(function() {
+  })
+
+  /* $('.modal__form').click(function() {
     if ($("#modal-policy-checkbox").is(':checked')) {
       $('#close').removeAttr('disabled');
     } else {
       $('#close').attr('disabled', 'disabled');
     }
-  })
+  
+  }); */
+  
+
+  
   
   
 
@@ -121,7 +133,7 @@ $('.button--up').click(function () {
         if(isAddedMap) return;
         isAddedMap = true;
         var script = document.createElement('script');
-        script.src ="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aee1e4443c3b3ec2d60161f14799acde251e0705e7aa25a59da214d2ab6427c6b&amp;width=100%25&amp;height=450&amp;lang=ru_RU&amp;scroll=false";
+        script.src ="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Aee1e4443c3b3ec2d60161f14799acde251e0705e7aa25a59da214d2ab6427c6b&amp;width=100%25&amp;height=466&amp;lang=ru_RU&amp;scroll=false";
         el.append(script);
       };
   });
@@ -142,7 +154,11 @@ $('.button--up').click(function () {
       // правило-объект (блок)
       userEmail: {
         required: true,
-      }
+      },
+      policyCheckbox: {
+        required: true,
+      },
+
     }, // сообщения 
     messages: {
       userName: {
@@ -151,6 +167,11 @@ $('.button--up').click(function () {
         maxlength: "Имя не более 15 символов"
       },
       userPhone: "Телефон обязателен",
+      
+      policyCheckbox: {
+        required: "Примите соглашение",
+      }
+
     },
     submitHandler: function(form) {
       $.ajax({
@@ -168,17 +189,20 @@ $('.button--up').click(function () {
       });
     }
   });
-  $('.control__form').click(function() {
+
+
+  /* $('.control__form').click(function() {
     if ($("#policy-checkbox").is(':checked')) {
       $('#send').removeAttr('disabled');
     } else {
       $('#send').attr('disabled', 'disabled');
     }
-  });
+  }); */
+  
 
 // Footer форма
 
-  // Форма footer 
+  
 
   $('.footer__form').validate({
     errorClass: "invalid",
