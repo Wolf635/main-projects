@@ -351,21 +351,23 @@ template {
   border: none;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   font-size: 1.285rem;
-  color: #fff;
+  color: #363636;
   padding: 0.5rem 0;
   outline: none; }
   .input-group {
     position: relative; }
-  .input--light::-webkit-input-placeholder {
+  .input--light {
     color: #fff; }
-  .input--light::-moz-placeholder {
-    color: #fff; }
-  .input--light:-ms-input-placeholder {
-    color: #fff; }
-  .input--light::-ms-input-placeholder {
-    color: #fff; }
-  .input--light::placeholder {
-    color: #fff; }
+    .input--light::-webkit-input-placeholder {
+      color: #fff; }
+    .input--light::-moz-placeholder {
+      color: #fff; }
+    .input--light:-ms-input-placeholder {
+      color: #fff; }
+    .input--light::-ms-input-placeholder {
+      color: #fff; }
+    .input--light::placeholder {
+      color: #fff; }
 
 .policy__checkbox {
   opacity: 0;
@@ -601,6 +603,16 @@ img {
   .hero__button {
     margin-right: 20px;
     padding: 18px 25.4px; }
+    .hero__button-thanks {
+      font-family: 'Yeseva One', cursive;
+      position: relative;
+      margin-left: 4.4rem;
+      outline: none;
+      border: none;
+      padding: 18px 25.4px; }
+      .hero__button-thanks--button {
+        text-decoration: none;
+        color: #fff; }
     .hero__button__one {
       padding: 18px 42px; }
       .hero__button__one:hover {
@@ -664,7 +676,8 @@ img {
       width: 50px;
       height: 1px;
       background-color: #e3b873;
-      margin-left: 8px; }
+      margin-left: 8px;
+      margin-bottom: 0.1rem; }
 
 .title {
   margin: 0;
@@ -684,7 +697,8 @@ img {
   flex-wrap: wrap;
   margin-top: 2.142rem; }
   .swiper-slide-image {
-    height: 100%; }
+    height: 100%;
+    width: 550px; }
   .swiper-slide__value {
     font-size: 1.07rem;
     line-height: 1.42rem; }
@@ -718,10 +732,12 @@ img {
 
 .swiper-button-prev {
   left: 0;
-  background: url("../img/arrow-prev.svg") no-repeat center; }
+  background: url("../img/arrow-prev.svg") no-repeat center;
+  background-repeat: no-repeat; }
 
 .swiper-button-next {
-  background: url("../img/arrow-next.svg") no-repeat center; }
+  background: url("../img/arrow-next.svg") no-repeat center;
+  background-repeat: no-repeat; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
@@ -779,8 +795,11 @@ img {
     .control__input--group {
       font-size: 1.285rem;
       color: #181818; }
+    .control__input__group {
+      color: #363636; }
   .control__label {
-    margin-bottom: -7px; }
+    margin-bottom: -7px;
+    color: rgba(54, 54, 54, 0.5); }
   .control__button {
     padding: 1.2857rem 4.585rem;
     font-size: 1.05rem; }
@@ -788,6 +807,9 @@ img {
     flex-basis: 100%;
     margin-top: 1rem;
     position: relative; }
+    .control__policy__checkbox {
+      position: relative;
+      display: block; }
     .control__policy-label {
       margin-left: 28.7%; }
 
@@ -795,6 +817,9 @@ img {
   position: relative;
   margin: auto;
   cursor: pointer; }
+
+.invalid {
+  color: green; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -1030,7 +1055,10 @@ img {
         margin-bottom: 2rem; }
   .footer__policy {
     flex-basis: 100%;
-    margin-bottom: 3.6rem; }
+    margin-bottom: 3.6rem;
+    position: relative; }
+    .footer__policy__checkbox {
+      position: relative; }
   .footer__button {
     margin: auto;
     padding: 1.185rem 4.385rem;
@@ -1047,7 +1075,8 @@ img {
   margin: 0;
   bottom: 20px;
   position: fixed;
-  background: url("img/arrow-icon.png") no-repeat; }
+  background: url("img/arrow-icon.png") no-repeat;
+  outline: none; }
 
 .modal {
   opacity: 0;
@@ -1070,33 +1099,41 @@ img {
   .modal__dialog {
     position: relative;
     max-width: 36.36rem;
-    background: #131313 url("../img/bg-lines.svg") no-repeat center;
+    background: #131313 url("../img/bg-lines.png") no-repeat center;
     padding: 2.357rem 3.5rem 1.928rem;
-    color: #fff; }
+    color: #fff;
+    top: 3.3rem; }
   .modal__close {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 0.278rem;
+    top: 0.121rem;
     width: 28px;
     height: 28px;
-    background: transparent url("../img/close.svg") no-repeat center/1.4rem;
+    background: transparent url("../img/close.svg") no-repeat center/1.8rem;
     border: none;
     margin: 10px;
-    cursor: pointer; }
+    cursor: pointer;
+    outline: none; }
   .modal__title {
     font-family: 'Yeseva One', cursive;
     font-display: swap;
     font-size: 1.357rem;
     text-align: center;
     margin: 0;
-    margin-bottom: 2.428rem; }
+    margin-bottom: 1.728rem;
+    line-height: 1.95rem; }
   .modal__form {
     display: flex;
     flex-direction: column; }
-  .modal__input-group {
+  .modal__input__group {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 3.428rem; }
+    flex-direction: column; }
+    .modal__input__group-name {
+      margin-bottom: 2.228rem; }
+    .modal__input__group-phone {
+      margin-bottom: 2.228rem; }
+    .modal__input__group-email {
+      margin-bottom: -1.2rem; }
   .modal__input:last-of-type {
     margin-bottom: 1rem; }
   .modal__policy {
@@ -1111,6 +1148,19 @@ img {
 @media screen and (max-width: 1366px) {
   .section-title {
     font-size: 0.95rem; } }
+
+@media all and (-ms-high-contrast: none) {
+  .hero__scroll-down {
+    padding: 1.5rem 0 0 3rem; }
+  .hero__button__one {
+    margin-bottom: 8rem; }
+  .control__text {
+    width: 40rem; }
+  *::-ms-backdrop__scroll-down,
+  .hero__scroll-down {
+    padding: 1.5rem 0 0 3rem; }
+  .control__text {
+    width: 40rem; } }
 
 @media screen and (max-width: 1326px) {
   .contacts_menu__contacts {
@@ -1224,6 +1274,10 @@ img {
   .card__team {
     margin-bottom: 7.3rem; } }
 
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .card__text {
+    margin-left: 0; } }
+
 @media screen and (max-width: 576px) {
   .container {
     width: 90%;
@@ -1242,19 +1296,19 @@ img {
     margin: 0; }
   .card__text {
     max-width: 22.4rem;
-    margin-left: 0;
     margin-top: -12.23rem;
     padding: 1.45rem 2.46rem; }
   .card__pricatag {
     bottom: -1rem;
     padding: 1.2rem 2.5rem;
     -webkit-animation: none;
-    animation: none; }
+    animation: none;
+    text-align: center; }
     .card__pricatag__team {
       font-size: 1.1rem; }
   .card__list {
     line-height: 1.9rem;
-    margin-bottom: 2.8rem; }
+    margin-bottom: 2.9rem; }
     .card__list__team {
       margin-bottom: 2.65rem; }
   .card__title__team {
@@ -1332,7 +1386,7 @@ img {
     display: flex; }
   .control {
     background-color: #131313;
-    margin-bottom: 4.7rem; }
+    margin-bottom: 6.8rem; }
     .control__label {
       color: rgba(255, 255, 255, 0.5); }
     .control__policy {
@@ -1467,6 +1521,11 @@ img {
     padding: 0.833rem;
     margin-left: -17.4%; } }
 
+@media screen and (min-width: 450px) and (max-width: 480px) {
+  .team__card__image {
+    margin: -13.4%;
+    margin-left: -14.3%; } }
+
 @media screen and (min-width: 320px) and (max-width: 349px) {
   .team__text {
     width: 100%; }
@@ -1483,13 +1542,44 @@ img {
   .team__card__image {
     margin-left: -14.3%; } }
 
+@media screen and (min-width: 375px) and (max-width: 414px) {
+  .team__card__image {
+    margin: -15.4%;
+    margin-left: -16.4%; } }
+
 @media screen and (min-width: 620px) and (max-width: 760px) {
   .team__card__image {
     margin: -8%; } }
 
-@media screen and (min-width: 470px) and (max-width: 620px) {
+@media screen and (min-width: 481px) and (max-width: 520px) {
   .team__card__image {
-    margin: -9.3%; } }
+    margin: -12.9%;
+    margin-left: -13.7%; } }
+
+@media screen and (min-width: 521px) and (max-width: 575px) {
+  .team__card__image {
+    margin: -11.9%;
+    margin-left: -12.9%; } }
+
+@media screen and (min-width: 576px) and (max-width: 640px) {
+  .team__card__image {
+    margin: -8.9%;
+    margin-left: -9.7%; } }
+
+@media screen and (min-width: 764px) and (max-width: 810px) {
+  .team__card__image {
+    margin: -6.6%;
+    margin-left: -7.4%; } }
+
+@media screen and (min-width: 811px) and (max-width: 848px) {
+  .team__card__image {
+    margin: -6.6%;
+    margin-left: -6%; } }
+
+@media screen and (min-width: 849px) and (max-width: 870px) {
+  .team__card__image {
+    margin: -6%;
+    margin-left: -6.2%; } }
 
 @media screen and (max-width: 414px) {
   .control__button {

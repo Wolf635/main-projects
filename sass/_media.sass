@@ -7,7 +7,31 @@
                 object-fit contain    
     .section-title
         font-size: 0.95rem
-   
+
+
+
+@media all and (-ms-high-contrast:none)
+         
+    .hero
+        &__scroll-down
+                padding: 1.5rem 0 0 3rem
+        &__button 
+            &__one 
+                margin-bottom: 8rem   /* IE10 */
+    .control
+        &__text
+            width: 40rem            
+    *::-ms-backdrop, 
+    .hero
+        &__scroll-down
+                padding: 1.5rem 0 0 3rem   /* IE11 */
+    .control
+        &__text
+            width: 40rem    
+
+
+
+
 @media screen and ( max-width: 1326px )
     .contacts_menu__contacts 
         display: flex
@@ -152,7 +176,11 @@
     .card
         &__team
             margin-bottom: 7.3rem
-
+            
+@media screen and (min-width: 320px) and( max-width: 375px )       
+    .card
+        &__text
+            margin-left: 0
 
 @media screen and ( max-width: 576px ) 
     .container
@@ -173,19 +201,19 @@
         margin: 0
     .card
         &__text
-            max-width: 22.4rem
-            margin-left: 0   
+            max-width: 22.4rem  
             margin-top: -12.23rem 
             padding: 1.45rem 2.46rem
         &__pricatag
             bottom: -1rem
             padding: 1.2rem 2.5rem  
             animation: none
+            text-align: center
             &__team
                 font-size: 1.1rem  
         &__list
             line-height: 1.9rem 
-            margin-bottom: 2.8rem
+            margin-bottom: 2.9rem
             &__team
                 margin-bottom: 2.65rem
         &__title
@@ -275,7 +303,7 @@
         display: flex  
     .control
         background-color: $dark
-        margin-bottom: 4.7rem
+        margin-bottom: 6.8rem
         &__label
             color: rgba(255, 255, 255, 0.5) 
         &__policy
@@ -418,20 +446,20 @@
             &__image
                 margin: -16.2%    
                 padding: 0.833rem  
-                margin-left: -17.4%        
-    .card
-        &__image 
-            &--team
-                  //width: 23.8rem        
+                margin-left: -17.4%  
+
+@media screen and (min-width: 450px) and( max-width: 480px )
+    .team
+        &__card
+            &__image
+                margin: -13.4%
+                margin-left: -14.3%
 
 @media screen and (min-width: 320px) and( max-width: 349px )
     .team
         &__text
             width: 100%        
-    .card
-        &__image
-            &--team
-                     //width: 21.6rem 
+    .card           
         &__team 
             margin-top: -6.43rem       
 
@@ -452,18 +480,58 @@
         &__card
             &__image
                     margin-left: -14.3%
+@media screen and (min-width: 375px) and( max-width: 414px )
+    .team
+        &__card
+            &__image
+                margin: -15.4%
+                margin-left: -16.4% 
+
 @media screen and ( min-width: 620px) and( max-width: 760px )
     .team
         &__card
             &__image
                 margin: -8%
 
-@media screen and ( min-width: 470px) and( max-width: 620px )
+@media screen and ( min-width: 481px) and( max-width: 520px )
 
     .team
         &__card
             &__image
-                margin: -9.3% 
+                margin: -12.9%
+                margin-left: -13.7%
+@media screen and ( min-width: 521px) and( max-width: 575px )
+    .team
+        &__card
+            &__image
+                margin: -11.9%
+                margin-left: -12.9%
+@media screen and ( min-width: 576px) and( max-width: 640px )
+
+    .team
+        &__card
+            &__image
+                margin: -8.9%
+                margin-left: -9.7%    
+@media screen and ( min-width: 764px) and( max-width: 810px )
+    .team
+        &__card
+            &__image
+                margin: -6.6%
+                margin-left: -7.4%     
+@media screen and ( min-width: 811px) and( max-width: 848px )
+    .team
+        &__card
+            &__image
+                margin: -6.6%
+                margin-left: -6%  
+@media screen and ( min-width: 849px) and( max-width: 870px )
+    .team
+        &__card
+            &__image
+                margin: -6%
+                margin-left: -6.2%                                                     
+
 @media screen and ( max-width: 414px ) 
     .control
         &__button

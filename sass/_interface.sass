@@ -29,12 +29,13 @@
   border: none
   border-bottom: 1px solid rgba(54, 54, 54, 0.3)   
   font-size: 1.285rem
-  color: $light
+  color: $gray  // тут цвет не рабочий
   padding: 0.5rem 0
   outline: none
   &-group
     position: relative
   &--light
+    color: $light
     &::placeholder
       color: $light   
 .policy
@@ -59,7 +60,7 @@
       margin-right: 0.64rem
     &--center
       margin-left: 22.6%
-      //justify-content: center  
+   
 
 em.invalid
   color: tomato
@@ -68,8 +69,7 @@ em.invalid
   top: 55px
   right: 0px
   margin:  auto
-  letter-spacing: 0.020rem
-    
+  letter-spacing: 0.020rem 
 input
   &.invalid
     border-bottom: 1px solid tomato

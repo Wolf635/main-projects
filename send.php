@@ -4,7 +4,6 @@ $userName = $_POST['userName'];
 $userEmail = $_POST['userEmail'];
 $userPhone = $_POST['userPhone'];
 
-
 // Load Composer's autoloader
 require 'phpmailer/PHPMailer.php';
 require 'phpmailer/SMTP.php';

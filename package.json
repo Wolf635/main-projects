@@ -17,6 +17,7 @@
     "gulp-sass": "^4.0.2"
   },
   "dependencies": {
+    "@fancyapps/fancybox": "^3.5.7",
     "browser-sync": "^2.26.7",
     "gulp-htmlmin": "^5.0.1",
     "gulp-tinypng-compress": "^1.2.5"

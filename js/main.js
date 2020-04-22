@@ -63,8 +63,11 @@ $('.button--up').click(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
-
+      userPhone: {
+        required: true,
+        minlength: 17
+      },
+  
       modalPolicyСheckbox: {
         required: true,
       },
@@ -95,7 +98,7 @@ $('.button--up').click(function () {
         url: "send.php",
         data: $(form).serialize(),
         success: function (response) {
-          alert(' Форма отправлена, мы свяжемся с вами через 10 минут.');
+          location.href = "thanks.html";
           $(form)[0].reset();
           modal.removeClass('modal--visible');
         },
@@ -106,6 +109,27 @@ $('.button--up').click(function () {
     }
   })
 
+  /* submitHandler: function(form) {
+      $.ajax({
+        url: "send.php",
+        type: 'POST', // метод передачи данных
+        dataType: 'text', // тип ожидаемых данных в ответе
+        data: $(form).serialize(), 
+        error: function(req, text, error) { // отслеживание ошибок во время выполнения ajax-запроса4
+            alert('Возникла ошибка!' + text + "-------" + req + "-------" + error)
+            // location.reload();                
+        },
+        success:  function(json) {
+            console.log(json);   
+            setTimeout(function() {
+                $("#loader").fadeOut(300)
+                setTimeout(function() {
+                    $('.quiz__final-container').fadeIn(300).css({display: 'flex'})
+                }, 1000);
+            }, 400);
+        }
+    });
+    } */
   /* $('.modal__form').click(function() {
     if ($("#modal-policy-checkbox").is(':checked')) {
       $('#close').removeAttr('disabled');
@@ -114,11 +138,6 @@ $('.button--up').click(function () {
     }
   
   }); */
-  
-
-  
-  
-  
 
 
   // маска для телефона
@@ -150,7 +169,10 @@ $('.button--up').click(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 17,
+      },
       // правило-объект (блок)
       userEmail: {
         required: true,
@@ -166,12 +188,11 @@ $('.button--up').click(function () {
         minlength: "Имя не короче двух букв",
         maxlength: "Имя не более 15 символов"
       },
+    policyCheckbox: {
+          required: "Примите соглашение",
+        },
       userPhone: "Телефон обязателен",
-      
-      policyCheckbox: {
-        required: "Примите соглашение",
-      }
-
+   
     },
     submitHandler: function(form) {
       $.ajax({
@@ -179,7 +200,7 @@ $('.button--up').click(function () {
         url: "send.php",
         data: $(form).serialize(),
         success: function (response) {
-          alert(' Форма отправлена, мы свяжемся с вами через 10 минут.');
+          location.href = "thanks.html";
           $(form)[0].reset();
           modal.removeClass('modal--visible');
         },
@@ -202,8 +223,6 @@ $('.button--up').click(function () {
 
 // Footer форма
 
-  
-
   $('.footer__form').validate({
     errorClass: "invalid",
     errorElement: "em",
@@ -214,11 +233,17 @@ $('.button--up').click(function () {
         minlength: 2,
         maxlength: 15
       },
-      userPhone: "required",
+      userPhone: {
+        required: true,
+        minlength: 17
+      },
       // правило-объект (блок)
       userEmail: {
         required: true,
         email: true
+      },
+      footerСheckbox: {
+        required: true,
       },
       userquestion: {
         required: true, 
@@ -236,6 +261,9 @@ $('.button--up').click(function () {
       },
       userquestion: "Напишите свой вопрос",
       userPhone: "Телефон обязателен",
+      footerСheckbox: {
+      required: "Примите соглашение",
+      }
     },
     submitHandler: function(form) {
       $.ajax({
@@ -243,7 +271,7 @@ $('.button--up').click(function () {
         url: "send.php",
         data: $(form).serialize(),
         success: function (response) {
-          alert(' Форма отправлена, мы свяжемся с вами через 10 минут.');
+          location.href = "thanks.html";
           $(form)[0].reset();
           modal.removeClass('modal--visible');
         },
@@ -253,13 +281,14 @@ $('.button--up').click(function () {
       });
     }
   });
-  $('.footer__form').click(function() {
+
+ /*  $('.footer__form').click(function() {
     if ($("#footer-policy-checkbox").is(':checked')) {
       $('#open').removeAttr('disabled');
     } else {
       $('#open').attr('disabled', 'disabled');
     }
-  })
+  }) */
   var player;
   $('.video__play').on('click', function onYouTubeIframeAPIReady() {
     player = new YT.Player('player', {
