@@ -47,8 +47,8 @@ $('.button--up').click(function () {
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
-  next.css('left', prev.width() + 10 + bullets.width() +10 )
-  bullets.css('left', prev.width() +10)
+  next.css('left', prev.width() + 40 + bullets.width() +40 )
+  bullets.css('left', prev.width() +40)
 
   new WOW().init();
 
@@ -161,7 +161,8 @@ $('.button--up').click(function () {
   // Форма Онлайн контроль
   $('.control__form').validate({
     errorClass: "invalid",
-    errorElement: "em",
+    errorElement: "em", 
+  
     rules: {
       //  строчное правило
       userName: {

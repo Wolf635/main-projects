@@ -68,6 +68,10 @@
             &--team
                 max-width: 19.6rem                 
 
+@media screen and (min-width: 957px) and( max-width: 1047px ) 
+    .card
+        &__text
+            min-width: 21.7rem   
 @media screen and ( max-width: 992px ) 
     .nav
         display: none
@@ -462,17 +466,17 @@
     .card           
         &__team 
             margin-top: -6.43rem       
-
+    .modal
+        &__button
+            padding: 16px 14px
 
 @media screen and (min-width: 320px) and( max-width: 350px )
     .team
         &__card
             &__image
                 display: none
-@media screen and ( min-width: 320px) and( max-width: 357px )
-    .col-33
-            margin auto // пок убраь
-            
+
+
 @media screen and ( min-width: 360px) and( max-width: 374px )  
     .col-33
             margin-left: 2.2rem  
@@ -537,6 +541,16 @@
         &__button
             width: 100%
             margin-bottom: -2.18rem
+@media screen and ( max-width: 1024px )            
+    .control__policy em.invalid 
+        margin-top: 0  
+    .modal__policy em.invalid 
+        margin-top: 2rem    
+    .modal
+        &__policy  
+            padding-top: 2.9rem    
+        &__button
+            width: 100%        
 @media screen and ( max-width: 384px )            
     .col-33
          margin-left: auto 

@@ -48,11 +48,12 @@
         
     &__input
         font-size: 1.285rem   
-        &--group
+        &group
             font-size: 1.285rem  
             color: $black  
         &__group
-            color: $gray
+            &::placeholder
+                color: $light    
     &__label
         margin-bottom: -7px   
         color: rgba(54, 54, 54, 0.5)
@@ -60,20 +61,16 @@
         padding: 1.2857rem 4.585rem  
         font-size: 1.05rem   
     &__policy
+        position: relative
         flex-basis: 100%  
         margin-top: 1rem 
-        position: relative
-        left 30%
         &__checkbox
             position: relative
             display: block
         &-label
-            justify-content center  // тут тоже
             margin-left: 28.7%          
 .video
     &__play
         position: relative    
         margin: auto    
-        cursor: pointer            
-.invalid
-    color: green        
+        cursor: pointer         

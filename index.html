@@ -244,12 +244,14 @@
                         <label for="user-name" class="label form__label control__label">Имя</label>
                         <input type="text" autocomplete="off" name="userName"
                             class="input form__input control__input__group" id="username" placeholder="Как вас зовут:">
+                            <span class="bar bar-name"></span>
                     </div>
                     <div class="control__input-group control__input-group--form">
                         <label for="user-phone" class="label form__label control__label">Телефон</label>
                         <input type="tel" autocomplete="off" name="userPhone"
                             class="input form__input control__input__group" id="userphone"
                             placeholder="Ваш номер телефона:">
+                            <span class="bar bar-phone"></span>
                     </div>
                     <button class="button button--primary control__button" id="send">Отправить</button>
                     <div class="policy control__policy">     
@@ -268,7 +270,7 @@
         <!-- /.cection control -->
         <section>
             <div class="section types" id="projects">
-                <div class="container">
+                <div class="container container--projects">
                     <div class="section-title types__section-title">
                         <h2 class="section-title__heading section-title__heading--types">Виды ремонта</h2>
                         <!-- /.section-title__heading -->
@@ -279,13 +281,13 @@
                     </div>
                     <!-- /.section-title -->
                     <div class="row">
-                        <div class="col-30">
+                        <div class="col-30 col-30-projects">
                             <div class="card types__card">
                                 <img src="img/image.jpg" alt="Косметический ремонт" class="card__image">
-                                <div class="card__text">
+                                <div class="card__text card__text__projects">
                                     <h3 class="card__title">Косметический ремонт</h3>
                                     <!-- /.h3 card__title -->
-                                    <ul class="card__list">
+                                    <ul class="card__list card__list--projects">
                                         <li class="card__item">Демонтаж старых покрытий</li>
                                         <!-- /.card__item -->
                                         <li class="card__item">Поклейка обоев</li>
@@ -312,13 +314,13 @@
                             <!-- /.card -->
                         </div>
                         <!-- /.col -->
-                        <div class="col-30">
+                        <div class="col-30 col-30-projects">
                             <div class="card types__card">
                                 <img src="img/image2.jpg" alt="Капитальный ремонт" class="card__image">
-                                <div class="card__text">
+                                <div class="card__text card__text__projects--one">
                                     <h3 class="card__title">Капитальный ремонт</h3>
                                     <!-- /.h3 card__title -->
-                                    <ul class="card__list">
+                                    <ul class="card__list card__list--projects">
                                         <li class="card__item">Демонтаж старых покрытий</li>
                                         <!-- /.card__item -->
                                         <li class="card__item">Поклейка обоев</li>
@@ -335,7 +337,7 @@
                                         <!-- /.card__item -->
                                     </ul>
                                     <!-- /.card__list -->
-                                    <strong class="card__pricatag wow fadeInDown" data-wow-delay="0.7s"
+                                    <strong class="card__pricatag card__pricatag--projects wow fadeInDown" data-wow-delay="0.7s"
                                         data-toggle="modal">
                                         от 1800 руб / м<sup>2</sup>
                                     </strong>
@@ -345,13 +347,13 @@
                             <!-- /.card -->
                         </div>
                         <!-- /.col -->
-                        <div class="col-30">
+                        <div class="col-30 col-30-projects">
                             <div class="card types__card">
                                 <img src="img/image3.jpg" alt="Дизайнерский ремонт" class="card__image">
-                                <div class="card__text">
+                                <div class="card__text card__text__projects--two">
                                     <h3 class="card__title">Дизайнерский ремонт</h3>
                                     <!-- /.h3 card__title -->
-                                    <ul class="card__list">
+                                    <ul class="card__list card__list--projects">
                                         <li class="card__item">Демонтаж старых покрытий</li>
                                         <!-- /.card__item -->
                                         <li class="card__item">Поклейка обоев</li>
@@ -368,7 +370,7 @@
                                         <!-- /.card__item -->
                                     </ul>
                                     <!-- /.card__list -->
-                                    <strong class="card__pricatag wow fadeInDown" data-wow-delay="1s"
+                                    <strong class="card__pricatag card__pricatag__projects-two wow fadeInDown" data-wow-delay="1s"
                                         data-toggle="modal">
                                         от 4000 руб / м<sup>2</sup>
                                     </strong>
@@ -387,7 +389,7 @@
             <!-- /.section types -->
         </section>
         <section class="section design-project">
-            <div class="container">
+            <div class="container container--projects">
                 <div class="section-title">
                     <h2 class="section-title__heading section-title__heading--design">Дизайн проект</h2>
                     <!-- /.section-title__heading -->
@@ -403,11 +405,11 @@
                 </div>
                 <!-- /.section-title__sestion__text -->
                 <div class="row">
-                    <div class="col-30">
+                    <div class="col-30 col-30-projects">
                         <div class="card types__card">
                             <img src="img/image.jpg" alt="Минимальный" class="card__image">
                             <div class="card__text">
-                                <h3 class="card__title">Минимальный</h3>
+                                <h3 class="card__title card__title__design">Минимальный</h3>
                                 <!-- /.card__title -->
                                 <ul class="card__list">
                                     <li class="card__item">Измерительные чертежи</li>
@@ -431,13 +433,13 @@
                         <!-- /.card -->
                     </div>
                     <!-- /.col -->
-                    <div class="col-30">
+                    <div class="col-30 col-30-projects">
                         <div class="card types__card">
                             <img src="img/image3.jpg" alt="Стандартный" class="card__image">
                             <div class="card__text">
-                                <h3 class="card__title">Стандартный</h3>
+                                <h3 class="card__title card__title__design--one">Стандартный</h3>
                                 <!-- /.card__title -->
-                                <ul class="card__list">
+                                <ul class="card__list card__list__design">
                                     <li class="card__item">Измерительные чертежи</li>
                                     <!-- /.card__item -->
                                     <li class="card__item">Перепланировка</li>
@@ -465,13 +467,13 @@
                         <!-- /.card -->
                     </div>
                     <!-- /.col -->
-                    <div class="col-30">
+                    <div class="col-30 col-30-projects">
                         <div class="card types__card">
-                            <img src="img/image2.jpg" alt="Полный" class="card__image">
+                            <img src="img/image-bg.jpg" alt="Полный" class="card__image">
                             <div class="card__text">
-                                <h3 class="card__title">Полный</h3>
+                                <h3 class="card__title card__title__design--two">Полный</h3>
                                 <!-- /.card__title -->
-                                <ul class="card__list">
+                                <ul class="card__list card__list__design--three">
                                     <li class="card__item">Измерительные чертежи</li>
                                     <!-- /.card__item -->
                                     <li class="card__item">Перепланировка</li>
@@ -516,7 +518,7 @@
         </section>
         <!-- /.section design -->
         <div class="section__team" id="team">
-            <div class="container">
+            <div class="container container--team">
                 <div class="team__text">
                     <h2 class="team__title">Наша Команда</h2>
                     <div class="section-title__image">
@@ -561,7 +563,7 @@
                         <div class="col-33">
                             <div class="card team__card">
                                 <img class="team__card__image" src="img/icon-team3.png" alt="Картинка">
-                                <img src="img/team-icon3.jpg" alt="команда" class="card__image--team">
+                                    <img src="img/team-icon3.jpg" alt="команда" class="card__image--team">
                                 <div class="card__text card__team">
                                     <h3 class="card__title card__title__team">Давид Волынев</h3>
                                     <!-- /.card__title -->
@@ -597,18 +599,21 @@
                         <input type="text" autocomplete="off" name="userName"
                             class="input form__input footer__input input--light" id="userName"
                             placeholder="Как вас зовут:">
+                            <span class="bar bar-name"></span>
                     </div>
                     <div class="input-group footer__input-group">
                         <label for="user-phone" class="label form__label label--light">Телефон</label>
                         <input type="tel" autocomplete="off" name="userPhone"
                             class="input form__input footer__input input--light" id="userPhone"
                             placeholder="Ваш номер телефона:">
+                            <span class="bar bar-phone"></span>
                     </div>
                     <div class="input-group footer__input-group footer__input-group--full-width">
                         <label for="userquestion" class="label form__label label--light">Вопрос</label>
                         <input type="text" autocomplete="off" name="userquestion"
                             class="input form__input footer__input input--light" id="userquestion"
                             placeholder="Я хочу спросить:">
+                            <span class="bar bar-userquestion"></span>
                     </div>
                     <div class="policy footer__policy">
                         <input type="checkbox" name="footerСheckbox" id="footer-policy-checkbox"
@@ -678,17 +683,20 @@
                     <label for="user-name" class="label form__label label--light">Имя</label>
                     <input type="text" autocomplete="off" name="userName"
                         class="input form__input modal__input input--light" id="user-name" placeholder="Как вас зовут:">
+                        <span class="bar"></span>
                 </div>
                 <div class="input-group modal__input__group modal__input__group-phone">
                     <label for="user-phone" class="label form__label label--light">Телефон</label>
                     <input type="tel" autocomplete="off" name="userPhone"
                         class="input form__input modal__input input--light" id="user-phone"
                         placeholder="Ваш номер телефона:">
+                        <span class="bar"></span>
                 </div>
                 <div class="input-group modal__input__group modal__input__group-email">
                     <label for="user-email" class="label form__label label--light">Email</label>
                     <input type="email" autocomplete="off" name="userEmail"
                         class="input form__input modal__input input--light" id="user-email" placeholder="Ваш email:">
+                        <span class="bar"></span>
                 </div>
                 <div class="policy modal__policy">
                     <input type="checkbox"  name="modalPolicyСheckbox" id="modal-policy-checkbox"
