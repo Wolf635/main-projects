@@ -1,0 +1,60 @@
+
+.styles
+    margin-bottom: 5rem
+    position: relative
+    background: $dark url('../img/styles/image-background.jpg') // путь до картинки и темный фон,обязателен для подстраховки
+    background-position: center // картинка всегда будет по центру
+    background-repeat: no-repeat // картинка не повторяется
+    background-size: cover  // изображение подстраивается по ширину экрана
+    height: fit-content // высота на всю высоту монитора
+    color: $light // белый шрифт,подстраховка, если картинка не подгрузится
+    &::before
+        content: ''
+        position: absolute
+        width: 100%
+        height: 100%
+        background-color: rgba($dark, 0.7)
+        left: 0
+        top: 0
+    &__description
+        position: relative
+        z-index: 90
+        max-width: 30rem
+    &__title
+        font-family: 'Yeseva One', cursive
+        font-style: normal
+        font-weight: normal
+        max-width: 32.857rem
+        font-size: 1.928rem
+        line-height: 2.642rem
+        text-transform: uppercase
+        color: $primary
+        padding: 8.245rem 0 0.76rem
+        &__list
+            &__menu  
+                font-family: 'Futura', sans-serif            
+                line-height: 2.5rem
+                padding: 0
+                letter-spacing: 0.013rem
+                font-weight: 400
+    &__item
+        font-size: 1.5rem 
+        display: block  
+        font-style: normal 
+    &__item a 
+        text-decoration: none
+        color: $light
+        line-height: 3.5rem
+        &:hover
+            text-decoration-line: underline
+            color: $primary
+            transition: all 0.3s ease
+    &__wrapper
+        position: relative
+        display: flex
+    &__row
+        &__wrap
+            flex-direction: column
+            &__two          
+                flex-direction: column 
+   

@@ -1,5 +1,8 @@
 .control
-    margin-bottom: 10.5rem
+    background: url('../img/background-control.png') no-repeat center
+    background-size: cover  // изображение подстраивается по ширину экрана
+    height: fit-content
+    padding-bottom: 10.5rem
     &__section-title
         margin-bottom: 2.214rem
         margin-top: -30rem
@@ -25,6 +28,7 @@
         text-align: center
         font-size: 1.428rem
         line-height: 2.4rem
+        color: $gray
         &::before
             content: ''
             display: block
@@ -48,12 +52,13 @@
         
     &__input
         font-size: 1.285rem   
-        &group
+        &__group
             font-size: 1.285rem  
-            color: $black  
+            color: $gray 
         &__group
             &::placeholder
-                color: $light    
+                color: $gray   
+                opacity: 1
     &__label
         margin-bottom: -7px   
         color: rgba(54, 54, 54, 0.5)

@@ -1,13 +1,6 @@
-@media screen and ( max-width: 1366px )
-    .card
-        &__text
-            max-width 90% //// тут 
-        &__image
-            &--team
-                object-fit contain    
+@media screen and ( max-width: 1366px )   
     .section-title
         font-size: 0.95rem
-
 
 
 @media all and (-ms-high-contrast:none)
@@ -28,8 +21,6 @@
     .control
         &__text
             width: 40rem    
-
-
 
 
 @media screen and ( max-width: 1326px )
@@ -54,9 +45,12 @@
         padding-top: 10px
         line-height: 1.4  
         padding-bottom: 36px
+        max-width: 473.5px
     .hero__button
         padding: 20px 24px    
-
+    .col-50
+        &__projects
+            height: 100%
 @media screen and (min-width: 1048px) and( max-width: 1114px )     
     .card
         &__text
@@ -66,7 +60,7 @@
     .card
         &__image
             &--team
-                max-width: 19.6rem                 
+                width: 19.6rem                 
 
 @media screen and (min-width: 957px) and( max-width: 1047px ) 
     .card
@@ -80,10 +74,6 @@
             display: none
         &__content
             margin-left: 0        
-    .types
-        .card
-            &__title
-                min-height 2.9rem  
     .footer
         &__map
             width: 100%              
@@ -347,7 +337,8 @@
                     margin-top: 5.5rem
             &__group
                 font-size: 1.485rem 
-                color: $light
+                &::placeholder
+                    color: $light
     .section
         &__team
             margin-bottom: 0
@@ -445,19 +436,7 @@
         &__card
             margin-bottom: 2.4rem        
         &__text
-            width: 100% //27.9   
-        &__card
-            &__image
-                margin: -16.2%    
-                padding: 0.833rem  
-                margin-left: -17.4%  
-
-@media screen and (min-width: 450px) and( max-width: 480px )
-    .team
-        &__card
-            &__image
-                margin: -13.4%
-                margin-left: -14.3%
+            width: 100% //27.9     
 
 @media screen and (min-width: 320px) and( max-width: 349px )
     .team
@@ -476,65 +455,15 @@
             &__image
                 display: none
 
-
+@media screen and ( min-width: 350px) and( max-width: 380px )
+    .card
+        &__image
+            &--team
+                width: 25.466rem
 @media screen and ( min-width: 360px) and( max-width: 374px )  
     .col-33
             margin-left: 2.2rem  
-    .team
-        &__card
-            &__image
-                    margin-left: -14.3%
-@media screen and (min-width: 375px) and( max-width: 414px )
-    .team
-        &__card
-            &__image
-                margin: -15.4%
-                margin-left: -16.4% 
-
-@media screen and ( min-width: 620px) and( max-width: 760px )
-    .team
-        &__card
-            &__image
-                margin: -8%
-
-@media screen and ( min-width: 481px) and( max-width: 520px )
-
-    .team
-        &__card
-            &__image
-                margin: -12.9%
-                margin-left: -13.7%
-@media screen and ( min-width: 521px) and( max-width: 575px )
-    .team
-        &__card
-            &__image
-                margin: -11.9%
-                margin-left: -12.9%
-@media screen and ( min-width: 576px) and( max-width: 640px )
-
-    .team
-        &__card
-            &__image
-                margin: -8.9%
-                margin-left: -9.7%    
-@media screen and ( min-width: 764px) and( max-width: 810px )
-    .team
-        &__card
-            &__image
-                margin: -6.6%
-                margin-left: -7.4%     
-@media screen and ( min-width: 811px) and( max-width: 848px )
-    .team
-        &__card
-            &__image
-                margin: -6.6%
-                margin-left: -6%  
-@media screen and ( min-width: 849px) and( max-width: 870px )
-    .team
-        &__card
-            &__image
-                margin: -6%
-                margin-left: -6.2%                                                     
+                                                    
 
 @media screen and ( max-width: 414px ) 
     .control

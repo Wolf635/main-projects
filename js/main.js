@@ -330,6 +330,23 @@ $("body").on('click', '[href*="#contacts"]', function(e){
   $('html,body').stop().animate({ scrollTop: $(this.hash).offset().top - fixed_offset }, 1000);
   e.preventDefault();
 });
+
+// Слайдер Slick
+/* $(document).ready(function(){
+   $('.styles__slider').slick({
+      dots: true,            // Точки(буллиты),показывать или нет.По умолчанию false-отключить.true-показывать.
+      adaptiveHeight: true,  // Автоматическая адаптивная высота слайдера под слайд.
+      slidesToShow:2,        // Кол-во слайдов,которые мы хотим увидеть за раз.
+      slidesToScroll:1,      // Кол-во слайдов,которые будут пролистываться за 1 нажатие на стрелку.
+      speed: 1000,           // Отвечает за скорость пролистывыния наших слайдов, в мс.
+      initialSlide:3 ,       // Стартовый слайд,по умолчанию 0,отчет от 0.
+      touchMove:true,        // Включает все возможности для тачскрина(телефон,планшет).
+      centerMode:false,      // Слайдер один выстраивается по центру.
+      slidesPerRow:2,        // Кол-во слайдов в ряду.
+   });
+}); */
+
+
 });
 
 

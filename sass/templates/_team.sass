@@ -1,6 +1,11 @@
 .section__team
+    background: $light url('../img/background-control.png') no-repeat center
+    background-size: cover  // изображение подстраивается по ширину экрана
+    height: fit-content
     margin-bottom: 20rem
 .team 
+    &__card
+        position: relative
     &__text
         width: 32.22rem
         margin: auto
@@ -11,8 +16,11 @@
     &__card
         &__image
             position: absolute
-            margin: -3.6%
-            margin-left: -3.9rem
+            top: 0
+            left: 0
+            transform: translate(-52.4%, -45.1%)
+            margin -3.6%
+            margin-left -3.9rem
     &__description
             width: 40.4rem
             margin: auto
@@ -35,6 +43,7 @@
         font-size: 1.428rem
         font-family: 'Yeseva One', cursive   
         font-weight: normal
+        color: $gray
         &__text
             line-height: 1.928rem 
             font-size: 1.428rem 
@@ -43,7 +52,7 @@
     display: flex     
 .row
     &__team
-        justify-content: space-between
+        justify-content: space-around
 
 .card
     &__team
@@ -56,6 +65,7 @@
         padding: 1.4rem 2rem
         margin-bottom: 2.55rem             
     &__title
+        color: $gray
         font-size: 1.285rem
         font-family: 'Yeseva One', cursive
         padding-top: 0.1rem
