@@ -34,6 +34,12 @@ $('.button--up').click(function () {
   // код слайдера
   var mySwiper = new Swiper ('.swiper-container', {
   loop: true,
+  adaptiveHeight: true,
+  slidesToScroll:3,
+  speed: 1000,
+  initialSlide:1,
+  draggable: true,
+  variableWidth: true,
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
@@ -51,6 +57,20 @@ $('.button--up').click(function () {
   bullets.css('left', prev.width() +40)
 
   new WOW().init();
+
+/* $(document).ready(function(){
+   $('.swiper-container').Swiper({
+      dots: true,            // Точки(буллиты),показывать или нет.По умолчанию false-отключить.true-показывать.
+      adaptiveHeight: true,  // Автоматическая адаптивная высота слайдера под слайд.
+      slidesToShow:1,        // Кол-во слайдов,которые мы хотим увидеть за раз.
+      slidesToScroll:1,      // Кол-во слайдов,которые будут пролистываться за 1 нажатие на стрелку.
+      speed: 1000,           // Отвечает за скорость пролистывыния наших слайдов, в мс.
+      initialSlide:1 ,       // Стартовый слайд,по умолчанию 0,отчет от 0.
+      touchMove:true,        // Включает все возможности для тачскрина(телефон,планшет).
+      centerMode:true,      // Слайдер один выстраивается по центру.
+      slidesPerRow:2,        // Кол-во слайдов в ряду.
+   });
+}); */
 
   // Валидация формы
   $('.modal__form').validate({

@@ -8,6 +8,8 @@ body
   font-size: 1rem
 html,body
   overflow-x: hidden
+h3
+  font-size: calc(22px + 5 * (100vw / 1236))  
 .section
   &--dark
     background: url('../img/Frame.png') no-repeat center, url('../img/background-control2.png') no-repeat center
@@ -47,14 +49,16 @@ html,body
       font-size: 1.928rem
       font-weight: normal
       &--control
-        margin: 7.5rem 0 0.95rem 0   
+        margin: 6.7rem 0 0.95rem 0   
         font-size: 1.4rem   
         font-weight: normal
         color: $light
+        letter-spacing: 0.019rem
       &--types
         margin-top: 0
         font-size: 1.4rem
-        color: $black   
+        color: $black  
+        letter-spacing: 0.017rem 
       &--design
         font-size: 1.428rem    
       &--client
@@ -97,3 +101,12 @@ img
     justify-content: space-between
 .col
     flex-basis: 31.5% 
+    
+card
+  &__image
+        width: 100%
+        height: 100%
+        object-fit: contain
+        position: absolute
+        top: 0
+        left: 0 

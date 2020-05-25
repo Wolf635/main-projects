@@ -141,6 +141,9 @@
         &__team
             margin-bottom: 6rem            
 
+@media screen and ( max-width: 767px )
+    h3 
+        font-size: calc(22px + (5 + 5 * 0.7) * ((100vw -320px) / 1236))
 
 @media screen and (min-width: 577px) and ( max-width: 731px )
     .modal
@@ -450,7 +453,7 @@
             padding: 16px 14px
 
 @media screen and (min-width: 320px) and( max-width: 350px )
-    .team
+    team
         &__card
             &__image
                 display: none

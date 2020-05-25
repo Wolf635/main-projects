@@ -12,7 +12,7 @@
     color: $light 
     box-shadow: 0px 5px 15px rgba( $primary, 0.2)
     transition: box-shadow 0.2s
-    padding: 11px 20.2px  
+    padding: 11px 22px  
     outline: none
     &:hover
       box-shadow: none      
@@ -41,17 +41,20 @@
     &::placeholder
       color: $light
       opacity: 1
-
+.input:focus::placeholder
+  color: transparent
        
 .bar       
   &-name
     top: 1rem
+    position: relative
   &-phone 
     top: 1rem
+    position: relative
   &-userquestion 
     top: 1rem  
-  width: 100%
-  position: relative
+    width: 100%
+    position: relative
   &:before, 
   &:after
     content: ''
@@ -67,7 +70,18 @@
       left: 50%
   &:after
       right: 50% 
-
+  &__modal
+    &:before, 
+    &:after
+      content: ''
+      height: 2px
+      top: 55px
+      width: 0
+      background-color: $primary
+      position: absolute 
+      transition: 0.2s ease all
+      transition: 0.2s ease all
+      transition: 0.2s ease all
 input:focus 
   ~ .bar:before,
   ~ .bar:after
