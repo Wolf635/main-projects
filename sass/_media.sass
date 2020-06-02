@@ -56,19 +56,31 @@
         &__text
             min-width: 22.3rem   
 
+@media screen and (min-width: 957px) and( max-width: 1047px ) 
+    .card
+        &__text
+            min-width: 21.7rem
+
+@media screen and ( max-width: 1024px )            
+    .control__policy em.invalid 
+        margin-top: 0  
+    .modal__policy em.invalid 
+        margin-top: 2rem    
+    .modal
+        &__policy  
+            padding-top: 2.9rem    
+        &__button
+            width: 100%
+
 @media screen and ( min-width: 992px )   
     .card
         &__image
             &--team
                 width: 19.6rem                 
 
-@media screen and (min-width: 957px) and( max-width: 1047px ) 
-    .card
-        &__text
-            min-width: 21.7rem   
 @media screen and ( max-width: 992px ) 
     .nav
-        display: none
+        display none
     .hero
         &__instagram
             display: none
@@ -94,6 +106,15 @@
             &__text
                 max-width: 38rem      
 
+@media screen and (min-width: 400px) and ( max-width: 860px )   
+    .row
+        &__team
+            flex-direction: column
+            text-align: center
+    .col-33
+        margin: 0 auto    
+        margin-bottom: 5rem 
+
 @media screen and (min-width: 760px) and( max-width: 837px )
     .card 
         &__pricatag
@@ -111,15 +132,6 @@
             margin-bottom: 0
         &__title
             margin-bottom: 1rem      
-
-@media screen and (min-width: 400px) and ( max-width: 860px )   
-    .row
-        &__team
-            flex-direction: column
-            text-align: center
-    .col-33
-        margin: 0 auto    
-        margin-bottom: 5rem    
 
 @media screen and ( max-width: 768px )
     .row
@@ -144,6 +156,95 @@
 @media screen and ( max-width: 767px )
     h3 
         font-size: calc(22px + (5 + 5 * 0.7) * ((100vw -320px) / 1236))
+    .menu__logo
+        max-width: 100%
+        display: block  
+        z-index: 3 
+    .menu__contacts
+        display: none    
+    .menu
+        width: 100% 
+    .header
+        padding: 0  
+    .menu__burger.active:before
+        transform: rotate(45deg) 
+        top: 9px 
+    .menu__burger.active:after
+        transform: rotate(-45deg) 
+        bottom: 9px 
+    .menu__burger.active span  
+        transform: scale(0)  
+        transition: all 0.3s ease 0s          
+    .header:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: #000000
+        z-index: 3
+    .header__body
+        position: relative
+        display: flex
+        height: 50px
+        align-items: center        
+    .menu__burger
+        display: block
+        position: relative   
+        width: 30px
+        height: 20px 
+        z-index: 3
+    .menu__burger:before,
+    .menu__burger:after
+        content: ''
+        background-color: #fff
+        position: absolute
+        width: 100%
+        height: 2px
+        left: 0  
+        transition: all 0.3s ease 0s  
+    .menu__burger:before
+        top: 0        
+    .menu__burger:after
+        bottom: 0
+    .menu__burger span
+        position: absolute
+        background-color: #fff
+        position: absolute
+        left: 0
+        width: 100%
+        height: 2px
+        top: 9px
+    .menu__nav
+        position: fixed
+        top: -100%
+        left: 0
+        text-align: center
+        overflow: auto
+        width: 100%
+        height: 100%  
+        transition: all 0.3s ease 0s
+        background-color: #ece89d  
+        z-index: 2
+        padding: 70px 0 0 0
+        font-size: 1.3rem
+        
+    .menu__nav.active
+        top: 0    
+    .nav__item
+        display: block 
+        padding: 0 0 20px 0
+    .nav__item a  
+        width: 50% 
+        padding: 0 35px 0 35px
+        &:hover
+            background-color: #cccd
+            color: $dark
+    .menu__nav__wrap
+        display: inline
+    body.lock
+        overflow: hidden    
 
 @media screen and (min-width: 577px) and ( max-width: 731px )
     .modal
@@ -173,12 +274,6 @@
     .card
         &__team
             margin-bottom: 7.3rem
-            
-@media screen and (min-width: 320px) and( max-width: 375px )       
-    .card
-        &__text
-            margin-left: 0
-
 @media screen and ( max-width: 576px ) 
     .container
         width: 90%   
@@ -439,7 +534,39 @@
         &__card
             margin-bottom: 2.4rem        
         &__text
-            width: 100% //27.9     
+            width: 100% //27.9
+
+@media screen and ( max-width: 414px ) 
+    .control
+        &__button
+            width: 100%
+            margin-bottom: -2.18rem
+            
+@media screen and ( max-width: 384px )            
+    .col-33
+         margin-left: auto
+
+@media screen and ( min-width: 350px) and( max-width: 380px )
+    .card
+        &__image
+            &--team
+                width: 25.466rem
+
+@media screen and ( max-width: 380px )
+    .footer
+        &__button
+            width: 100%
+    .col-33
+            margin-left: auto
+
+@media screen and (min-width: 320px) and( max-width: 375px )       
+    .card
+        &__text
+            margin-left: 0
+         
+@media screen and ( min-width: 360px) and( max-width: 374px )  
+    .col-33
+            margin-left: 2.2rem
 
 @media screen and (min-width: 320px) and( max-width: 349px )
     .team
@@ -451,47 +578,9 @@
     .modal
         &__button
             padding: 16px 14px
-
-@media screen and (min-width: 320px) and( max-width: 350px )
-    team
-        &__card
-            &__image
-                display: none
-
-@media screen and ( min-width: 350px) and( max-width: 380px )
-    .card
-        &__image
-            &--team
-                width: 25.466rem
-@media screen and ( min-width: 360px) and( max-width: 374px )  
-    .col-33
-            margin-left: 2.2rem  
-                                                    
-
-@media screen and ( max-width: 414px ) 
-    .control
-        &__button
-            width: 100%
-            margin-bottom: -2.18rem
-@media screen and ( max-width: 1024px )            
-    .control__policy em.invalid 
-        margin-top: 0  
-    .modal__policy em.invalid 
-        margin-top: 2rem    
-    .modal
-        &__policy  
-            padding-top: 2.9rem    
-        &__button
-            width: 100%        
-@media screen and ( max-width: 384px )            
-    .col-33
-         margin-left: auto 
-@media screen and ( max-width: 380px )
-    .footer
-        &__button
-            width: 100%
-    .col-33
-            margin-left: auto        
+        
+ 
+        
     
 
     

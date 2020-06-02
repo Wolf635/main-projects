@@ -12,25 +12,29 @@
  align-items: center
  &__nav
     outline: none
+    display: flex
+    list-style: none
 .logo
   font-size: 1.075rem
   color: $primary     
   text-transform: uppercase
   &__menu
+    display: inline-block
+    max-width: 100%
     color: $primary
     text-decoration: none
     &:hover
      color: $light
      transition: all 500ms ease
 .nav
-  &__item 
+  &__item a
    color: $light   
    text-decoration: none
    text-transform: uppercase
    margin-left: 2.607rem
    transition: color 0.1s
    &:hover
-     color: $primary   
+    color: $primary   
 .phone
    color: $primary
    &:hover
@@ -39,4 +43,5 @@
 .contacts
   &__phone
     margin-right: 45px            
-         
+.menu__burger
+  display: none         

@@ -35,22 +35,29 @@
     </noscript> <!-- /Yandex.Metrika counter -->
     <header class="header">
         <div class="container">
-            <div class="menu" id="up">
-                <div class="logo menu__logo wow fadeInLeft">
-                    <a class="logo__menu" href="index.html">Repair Design Project</a>
-                </div>
-                <nav class="nav menu__nav">
-                    <a href="#" class="nav__item">Главная</a>
-                    <a href="#projects" class="nav__item">Проекты</a>
-                    <a href="#" class="nav__item">Замер</a>
-                    <a href="#team" class="nav__item">Команда</a>
-                    <a href="#client" class="nav__item">Отзывы</a>
-                    <a href="#contacts" class="nav__item">Контакты</a>
-                </nav>
-                <div class="contacts menu__contacts">
-                    <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
-                    <button onclick="ym('61348699', 'reachGoal', 'button'); return true;"
-                        class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+            <div class="header__body">
+                <div class="menu" id="up">
+                    <div class="logo menu__logo wow fadeInLeft">
+                        <a class="logo__menu" href="index.html">Repair Design Project</a>
+                    </div>
+                    <div class="menu__burger">
+                        <span></span>
+                    </div>
+                    <nav class="nav menu__nav">
+                        <ul class="nav menu__nav menu__nav__wrap">
+                            <li class="nav__item"><a href="#">Главная</a></li>
+                            <li class="nav__item"><a href="#projects">Проекты</a></li>
+                            <li class="nav__item"><a href="#">Замер</a></li>
+                            <li class="nav__item"><a href="#team">Команда</a></li>
+                            <li class="nav__item"><a href="#client">Отзывы</a></li>
+                            <li class="nav__item"><a href="#contacts">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="contacts menu__contacts">
+                        <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
+                        <button onclick="ym('61348699', 'reachGoal', 'button'); return true;"
+                            class="button contacts__button button--primary" data-toggle="modal">Заказать звонок</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -203,10 +210,12 @@
                             <div class="swiper-wrapper swiper-no-swiping">
                                 <!-- Slides -->
                                 <div class="swiper-slide">
-                                    <img class="swiper-slide-image" src="img/project.jpg" alt="Картинка">
+                                    <img class="swiper-slide-image" src="img/project.jpg" draggable="true alt="
+                                        Картинка">
                                 </div>
                                 <div class="swiper-slide">
-                                    <img class="swiper-slide-image" src="img/project-bg.png" alt="Картинка">
+                                    <img class="swiper-slide-image" src="img/project-bg.png" draggable="true alt="
+                                        Картинка">
                                 </div>
                                 <div class="swiper-slide">
                                     <img class="swiper-slide-image" src="img/project.jpg" alt="Картинка">
@@ -287,33 +296,33 @@
                         <div class="col-30 col-30-projects">
                             <div class="card types__card">
                                 <img src="img/image.jpg" alt="Косметический ремонт" class="card__image">
-                                    <div class="card__text card__text__projects">
-                                        <h3 class="card__title">Косметический ремонт</h3>
-                                        <!-- /.h3 card__title -->
-                                        <ul class="card__list card__list--projects">
-                                            <li class="card__item">Демонтаж старых покрытий</li>
-                                            <!-- /.card__item -->
-                                            <li class="card__item">Поклейка обоев</li>
-                                            <!-- /.card__item -->
-                                            <li class="card__item">Роспись стен и потолков</li>
-                                            <!-- /.card__item -->
-                                            <li class="card__item">Укладка полов</li>
-                                            <!-- /.card__item -->
-                                            <li class="card__item">Замена сантехники</li>
-                                            <!-- /.card__item -->
-                                            <li class="card__item">Замена розеток и выключателей</li>
-                                            <!-- /.card__item -->
-                                            <li class="card__item">Замена дверей</li>
-                                            <!-- /.card__item -->
-                                        </ul>
-                                        <!-- /.card__list -->
-                                        <strong class="card__pricatag wow fadeInDown" data-wow-delay="0.4s"
-                                            data-toggle="modal">
-                                            от 900 руб / м<sup>2</sup>
-                                        </strong>
-                                    </div>
-                                    <!-- /.card__text -->
-                                
+                                <div class="card__text card__text__projects">
+                                    <h3 class="card__title">Косметический ремонт</h3>
+                                    <!-- /.h3 card__title -->
+                                    <ul class="card__list card__list--projects">
+                                        <li class="card__item">Демонтаж старых покрытий</li>
+                                        <!-- /.card__item -->
+                                        <li class="card__item">Поклейка обоев</li>
+                                        <!-- /.card__item -->
+                                        <li class="card__item">Роспись стен и потолков</li>
+                                        <!-- /.card__item -->
+                                        <li class="card__item">Укладка полов</li>
+                                        <!-- /.card__item -->
+                                        <li class="card__item">Замена сантехники</li>
+                                        <!-- /.card__item -->
+                                        <li class="card__item">Замена розеток и выключателей</li>
+                                        <!-- /.card__item -->
+                                        <li class="card__item">Замена дверей</li>
+                                        <!-- /.card__item -->
+                                    </ul>
+                                    <!-- /.card__list -->
+                                    <strong class="card__pricatag wow fadeInDown" data-wow-delay="0.4s"
+                                        data-toggle="modal">
+                                        от 900 руб / м<sup>2</sup>
+                                    </strong>
+                                </div>
+                                <!-- /.card__text -->
+
                             </div>
                             <!-- /.card -->
                         </div>
@@ -573,7 +582,7 @@
             <!-- /.container -->
         </section>
         <!-- /.section design -->
-        <div class="section__team" id="team">
+        <div class="section__team section__background" id="team">
             <div class="container">
                 <div class="team__text">
                     <h2 class="team__title">Наша Команда</h2>
@@ -650,7 +659,7 @@
 
 
 
-        <section class="client" id="client">
+        <section class="client section__background" id="client">
             <div class="container">
                 <div class="section-title client__section-title section-title--dark">
                     <h2 class="section-title__heading section-title__heading--client">Наши клиенты</h2>
@@ -702,7 +711,7 @@
                                 <div class="client__wrapper">
                                     <img src="img/client/client-icon_1.jpg" alt="Клиенты"
                                         class="card__image card__image--client">
-                                    <h3 class="card__title card__title--client">Большов  Михаил Анатольевич</h3>
+                                    <h3 class="card__title card__title--client">Большов Михаил Анатольевич</h3>
                                 </div>
                                 <div class="card__list card__list--client">
                                     <div class="card__item card__item__list">Я хочу поблагодарить ребят за их работу.
@@ -835,7 +844,7 @@
                     <div class="map footer__map" id="map"></div>
                 </div>
                 <button class="button--up button--up--visible" id="button--up">
-                    <img src="img/arrow-icon.png" alt="Кнопка вверх">
+                    <img src="../img/arrow-icon.png" alt="Кнопка вверх">
                 </button>
             </div>
 

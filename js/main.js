@@ -1,3 +1,13 @@
+/* Код для бургера */
+
+$(document).ready(function() {
+  $('.menu__burger').click(function(event) { //обращаемся к .menu__burger и вешаем событие на клик
+    $('.menu__burger,.menu__nav').toggleClass('active');
+    $('body').toggleClass('lock'); // Обращение к body ,запрещаем скролл вниз когда открыт бургер
+    
+  });
+});
+
 
 /* JQuery код  */
 
@@ -35,11 +45,10 @@ $('.button--up').click(function () {
   var mySwiper = new Swiper ('.swiper-container', {
   loop: true,
   adaptiveHeight: true,
-  slidesToScroll:3,
   speed: 1000,
-  initialSlide:1,
   draggable: true,
   variableWidth: true,
+  waitForAnimate: true,
   pagination: {
     el: '.swiper-pagination',
     type: 'bullets',
@@ -53,8 +62,8 @@ $('.button--up').click(function () {
   var prev = $('.swiper-button-prev');
   var bullets = $('.swiper-pagination');
 
-  next.css('left', prev.width() + 40 + bullets.width() +40 )
-  bullets.css('left', prev.width() +40)
+  next.css('left', prev.width() + 25 + bullets.width() +25 )
+  bullets.css('left', prev.width() +25)
 
   new WOW().init();
 

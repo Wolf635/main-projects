@@ -512,7 +512,7 @@ input.invalid {
   justify-content: space-between; }
 
 .col-30 {
-  flex-basis: 30%; }
+  flex-basis: 30.6%; }
   .col-30-projects {
     flex-basis: 31.7%; }
 
@@ -618,7 +618,8 @@ h3 {
     .section-title__heading--design {
       font-size: 1.428rem; }
     .section-title__heading--client {
-      font-size: 1.428rem; }
+      font-size: 1.428rem;
+      margin-top: 0; }
     .section-title__heading--primary {
       color: #e3b873;
       letter-spacing: -0.07em; }
@@ -661,14 +662,14 @@ img {
 .col {
   flex-basis: 31.5%; }
 
-card__image {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-  object-fit: contain;
-  position: absolute;
-  top: 0;
-  left: 0; }
+.section__background {
+  background: url("../img/background-control.png") no-repeat center;
+  background-size: cover;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: #131313;
+  background-color: #fff; }
 
 .header {
   position: fixed;
@@ -684,26 +685,30 @@ card__image {
   justify-content: space-between;
   align-items: center; }
   .menu__nav {
-    outline: none; }
+    outline: none;
+    display: flex;
+    list-style: none; }
 
 .logo {
   font-size: 1.075rem;
   color: #e3b873;
   text-transform: uppercase; }
   .logo__menu {
+    display: inline-block;
+    max-width: 100%;
     color: #e3b873;
     text-decoration: none; }
     .logo__menu:hover {
       color: #fff;
       transition: all 500ms ease; }
 
-.nav__item {
+.nav__item a {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
   margin-left: 2.607rem;
   transition: color 0.1s; }
-  .nav__item:hover {
+  .nav__item a:hover {
     color: #e3b873; }
 
 .phone {
@@ -714,6 +719,9 @@ card__image {
 
 .contacts__phone {
   margin-right: 45px; }
+
+.menu__burger {
+  display: none; }
 
 .hero {
   position: relative;
@@ -899,10 +907,11 @@ card__image {
 
 .swiper-button-next {
   background: url("../img/arrow-next.svg") no-repeat center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  left: 163.8px; }
 
 .swiper-container {
-  padding-bottom: 2.4rem; }
+  padding-bottom: 4.2rem; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets {
   width: auto;
@@ -961,6 +970,8 @@ card__image {
     flex-direction: column;
     flex-basis: 30%;
     position: relative; }
+    .control__input-group--form {
+      padding-left: 0.2rem; }
   .control__input {
     font-size: 1.285rem; }
     .control__input__group {
@@ -1008,7 +1019,7 @@ card__image {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding-bottom: 30rem; }
+  padding-bottom: 16rem; }
 
 .types__section-title {
   margin-bottom: 2rem; }
@@ -1031,8 +1042,8 @@ card__image {
       margin-top: -9.3rem;
       padding: 1.65rem 2.07rem; }
   .card__text__client {
-    max-width: 97.3%;
-    padding: 1.75rem 0.9rem;
+    max-width: 98%;
+    padding: 1.45rem 1.4rem;
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04); }
   .card__text-card__team {
     position: relative;
@@ -1105,12 +1116,14 @@ card__image {
     padding: 1.2rem 2.6rem; }
     .card__pricatag__projects-two {
       padding: 1.2rem 2.4rem; }
+  .card__pricatag--projects {
+    padding: 1.2rem 2.6rem; }
 
 .card__design {
   width: 16.285rem; }
 
 .styles {
-  margin-bottom: 5rem;
+  margin-bottom: 10.5rem;
   position: relative;
   background: #131313 url("../img/styles/image-background.jpg");
   background-position: center;
@@ -1182,8 +1195,7 @@ card__image {
   background-size: cover;
   height: -webkit-fit-content;
   height: -moz-fit-content;
-  height: fit-content;
-  margin-bottom: 2rem; }
+  height: fit-content; }
 
 .team__card {
   position: relative; }
@@ -1200,7 +1212,7 @@ card__image {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translate(-52.4%, -45.1%); }
+  transform: translate(-49.2%, -46.3%); }
 
 .team__description {
   width: 40.4rem;
@@ -1209,12 +1221,14 @@ card__image {
   .team__description__text {
     font-weight: normal;
     font-size: 1.428rem;
-    line-height: 2.428rem; }
+    line-height: 2.428rem;
+    padding-bottom: 5.9rem; }
     .team__description__text::before {
       content: '';
       display: block;
       margin: auto;
-      margin-bottom: 2.5rem;
+      margin-top: 3rem;
+      margin-bottom: 0.6rem;
       width: 55px;
       height: 2px;
       background-color: #e3b873;
@@ -1264,25 +1278,24 @@ card__image {
   font-family: 'Futura Book', sans-serif; }
 
 .card__image--team {
-  -o-object-fit: none;
-  object-fit: none;
+  -o-object-fit: cover;
+  object-fit: cover;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content; }
 
 .client {
-  background: #fff url("../img/background-control.png") no-repeat center;
   background-size: cover;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  margin-bottom: 28.7rem; }
+  padding-bottom: 26.7rem; }
   .client__image {
     position: absolute;
     z-index: 2;
     width: 33px;
     height: 33px;
-    margin: 0.6rem 0; }
+    margin: 0.2rem 0; }
   .client__image1 {
     position: absolute;
     left: 35.8%;
@@ -1290,16 +1303,17 @@ card__image {
   .client__image2 {
     position: absolute;
     left: 41%;
-    margin-top: 0.5rem;
+    margin-top: 0.2rem;
     z-index: 1; }
   .client__wrapper {
     display: flex;
     align-items: center; }
   .client__types__card {
-    margin-top: 9.2rem; }
+    margin-top: 9.8rem; }
 
 .section__client__subtitle {
-  max-width: 23rem; }
+  max-width: 23rem;
+  margin-top: 1rem; }
 
 .card__pricatag__wrapper {
   display: flex; }
@@ -1307,11 +1321,11 @@ card__image {
 .card__pricatag__client {
   position: absolute;
   padding: 1.2rem 8.7rem;
-  padding-left: 4.2rem; }
+  padding-left: 4.6rem; }
 
 .card__pricatag__client2 {
   position: absolute;
-  margin-left: 12.2rem;
+  margin-left: 12.6rem;
   text-transform: inherit;
   padding: 1.2rem 1.6rem; }
 
@@ -1326,15 +1340,15 @@ card__image {
   border-radius: 50%; }
 
 .card__title--client {
-  margin-left: 1.242rem;
-  line-height: 27px;
-  padding-top: 0.8rem; }
+  transform: translate(20.2px, 2px);
+  line-height: 23.8px; }
 
 .card__item__list::before {
   display: none; }
 
 .card__list--client {
-  padding: 2.785rem 0 0 0; }
+  padding: 0.785rem 0 1.3rem;
+  line-height: 181.1%; }
 
 sup {
   top: -0.3em; }
@@ -1355,7 +1369,7 @@ sup {
     max-width: 63.07rem;
     margin: auto;
     padding: 2.5rem;
-    margin-top: -20rem;
+    margin-top: -18.8rem;
     margin-bottom: 2.4rem; }
   .footer__title {
     text-transform: uppercase;
@@ -1385,7 +1399,7 @@ sup {
         font-size: 1.428rem;
         font-style: normal;
         font-weight: normal;
-        line-height: 1.8rem;
+        line-height: 2rem;
         margin-bottom: 1.8rem; }
     .footer__title__form {
       color: #fff; }
@@ -1396,7 +1410,7 @@ sup {
     margin: auto;
     height: 465px;
     width: 66.07rem;
-    margin-bottom: 5.8rem; }
+    margin-bottom: 5.7rem; }
   .footer__social {
     text-align: center;
     margin-bottom: 2.5rem; }
@@ -1440,7 +1454,6 @@ sup {
   margin: 0;
   bottom: 20px;
   position: fixed;
-  background: url("img/arrow-icon.png") no-repeat;
   outline: none; }
 
 .modal {
@@ -1565,17 +1578,25 @@ sup {
   .card__text {
     min-width: 22.3rem; } }
 
-@media screen and (min-width: 992px) {
-  .card__image--team {
-    width: 19.6rem; } }
-
 @media screen and (min-width: 957px) and (max-width: 1047px) {
   .card__text {
     min-width: 21.7rem; } }
 
+@media screen and (max-width: 1024px) {
+  .control__policy em.invalid {
+    margin-top: 0; }
+  .modal__policy em.invalid {
+    margin-top: 2rem; }
+  .modal__policy {
+    padding-top: 2.9rem; }
+  .modal__button {
+    width: 100%; } }
+
+@media screen and (min-width: 992px) {
+  .card__image--team {
+    width: 19.6rem; } }
+
 @media screen and (max-width: 992px) {
-  .nav {
-    display: none; }
   .hero__instagram {
     display: none; }
   .hero__content {
@@ -1597,6 +1618,14 @@ sup {
   .footer__title__wrap__text {
     max-width: 38rem; } }
 
+@media screen and (min-width: 400px) and (max-width: 860px) {
+  .row__team {
+    flex-direction: column;
+    text-align: center; }
+  .col-33 {
+    margin: 0 auto;
+    margin-bottom: 5rem; } }
+
 @media screen and (min-width: 760px) and (max-width: 837px) {
   .card__pricatag {
     padding: 1.2rem 1.55rem; } }
@@ -1611,14 +1640,6 @@ sup {
     margin-bottom: 0; }
   .modal__title {
     margin-bottom: 1rem; } }
-
-@media screen and (min-width: 400px) and (max-width: 860px) {
-  .row__team {
-    flex-direction: column;
-    text-align: center; }
-  .col-33 {
-    margin: 0 auto;
-    margin-bottom: 5rem; } }
 
 @media screen and (max-width: 768px) {
   .row {
@@ -1637,7 +1658,95 @@ sup {
 
 @media screen and (max-width: 767px) {
   h3 {
-    font-size: calc(22px + (5 + 5 * 0.7) * ((100vw -320px) / 1236)); } }
+    font-size: calc(22px + (5 + 5 * 0.7) * ((100vw -320px) / 1236)); }
+  .menu__logo {
+    max-width: 100%;
+    display: block;
+    z-index: 3; }
+  .menu__contacts {
+    display: none; }
+  .menu {
+    width: 100%; }
+  .header {
+    padding: 0; }
+  .menu__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px; }
+  .menu__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px; }
+  .menu__burger.active span {
+    transform: scale(0);
+    transition: all 0.3s ease 0s; }
+  .header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    z-index: 3; }
+  .header__body {
+    position: relative;
+    display: flex;
+    height: 50px;
+    align-items: center; }
+  .menu__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3; }
+  .menu__burger:before,
+  .menu__burger:after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    transition: all 0.3s ease 0s; }
+  .menu__burger:before {
+    top: 0; }
+  .menu__burger:after {
+    bottom: 0; }
+  .menu__burger span {
+    position: absolute;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px; }
+  .menu__nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    text-align: center;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease 0s;
+    background-color: #ece89d;
+    z-index: 2;
+    padding: 70px 0 0 0;
+    font-size: 1.3rem; }
+  .menu__nav.active {
+    top: 0; }
+  .nav__item {
+    display: block;
+    padding: 0 0 20px 0; }
+  .nav__item a {
+    width: 50%;
+    padding: 0 35px 0 35px; }
+    .nav__item a:hover {
+      background-color: #cccd;
+      color: #131313; }
+  .menu__nav__wrap {
+    display: inline; }
+  body.lock {
+    overflow: hidden; } }
 
 @media screen and (min-width: 577px) and (max-width: 731px) {
   .modal__dialog {
@@ -1660,10 +1769,6 @@ sup {
     margin-bottom: 1.5rem; }
   .card__team {
     margin-bottom: 7.3rem; } }
-
-@media screen and (min-width: 320px) and (max-width: 375px) {
-  .card__text {
-    margin-left: 0; } }
 
 @media screen and (max-width: 576px) {
   .container {
@@ -1913,6 +2018,33 @@ sup {
   .team__text {
     width: 100%; } }
 
+@media screen and (max-width: 414px) {
+  .control__button {
+    width: 100%;
+    margin-bottom: -2.18rem; } }
+
+@media screen and (max-width: 384px) {
+  .col-33 {
+    margin-left: auto; } }
+
+@media screen and (min-width: 350px) and (max-width: 380px) {
+  .card__image--team {
+    width: 25.466rem; } }
+
+@media screen and (max-width: 380px) {
+  .footer__button {
+    width: 100%; }
+  .col-33 {
+    margin-left: auto; } }
+
+@media screen and (min-width: 320px) and (max-width: 375px) {
+  .card__text {
+    margin-left: 0; } }
+
+@media screen and (min-width: 360px) and (max-width: 374px) {
+  .col-33 {
+    margin-left: 2.2rem; } }
+
 @media screen and (min-width: 320px) and (max-width: 349px) {
   .team__text {
     width: 100%; }
@@ -1920,40 +2052,3 @@ sup {
     margin-top: -6.43rem; }
   .modal__button {
     padding: 16px 14px; } }
-
-@media screen and (min-width: 320px) and (max-width: 350px) {
-  team__card__image {
-    display: none; } }
-
-@media screen and (min-width: 350px) and (max-width: 380px) {
-  .card__image--team {
-    width: 25.466rem; } }
-
-@media screen and (min-width: 360px) and (max-width: 374px) {
-  .col-33 {
-    margin-left: 2.2rem; } }
-
-@media screen and (max-width: 414px) {
-  .control__button {
-    width: 100%;
-    margin-bottom: -2.18rem; } }
-
-@media screen and (max-width: 1024px) {
-  .control__policy em.invalid {
-    margin-top: 0; }
-  .modal__policy em.invalid {
-    margin-top: 2rem; }
-  .modal__policy {
-    padding-top: 2.9rem; }
-  .modal__button {
-    width: 100%; } }
-
-@media screen and (max-width: 384px) {
-  .col-33 {
-    margin-left: auto; } }
-
-@media screen and (max-width: 380px) {
-  .footer__button {
-    width: 100%; }
-  .col-33 {
-    margin-left: auto; } }
