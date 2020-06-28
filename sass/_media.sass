@@ -26,13 +26,9 @@
 @media screen and ( max-width: 1326px )
     .contacts_menu__contacts 
         display: flex
-    .contacts__phone    
-        margin-right: 10px 
         align-items: center
-    .hero__text
-        margin-bottom 3rem  // откючен
-    .hero__button
-        padding 20px 27px // ток 
+    .contacts__phone    
+        align-items: center
 
 @media screen and ( max-width: 1200px )
     html 
@@ -51,16 +47,33 @@
     .col-50
         &__projects
             height: 100%
+    .bar
+        &__modal
+            &:before, 
+            &:after
+                top: 45px
+    .swiper-slide__text
+        flex-basis: 44.7%               
 @media screen and (min-width: 1048px) and( max-width: 1114px )     
     .card
         &__text
             min-width: 22.3rem   
-
+@media screen and (min-width: 957px) and( max-width: 1085px )
+    .contacts
+        &__button
+            max-width: 9rem
 @media screen and (min-width: 957px) and( max-width: 1047px ) 
     .card
         &__text
             min-width: 21.7rem
+    .nav
+        &__item a
+            margin-left: 1rem
 
+@media screen and ( max-width: 1038px )   
+    .styles
+        &__title    
+            font-size: 1.528rem     
 @media screen and ( max-width: 1024px )            
     .control__policy em.invalid 
         margin-top: 0  
@@ -76,11 +89,13 @@
     .card
         &__image
             &--team
-                width: 19.6rem                 
-
+                width: 19.6rem   
+                 
+@media screen and ( min-width: 993px )                             
+    .styles
+        &__slider
+            display: none
 @media screen and ( max-width: 992px ) 
-    .nav
-        display none
     .hero
         &__instagram
             display: none
@@ -88,24 +103,67 @@
             margin-left: 0        
     .footer
         &__map
-            width: 100%              
+            width: 100%  
+    .styles
+        &__row
+            display: none           
 
-@media screen and ( max-width: 906px )
-    .row__slide
-        flex-direction: column
+@media screen and ( max-width: 957px )
+    .contacts
+        &__button
+            display: none
+        &__phone
+            margin-right: 0    
+
+@media screen and ( min-width: 900px) and( max-width: 958px )
+    .card
+        &__text
+            &__projects
+                padding: 1.65rem 1.6rem
+                &--one
+                    padding: 1.65rem 1.77rem
+                &--two
+                    padding: 1.65rem 1.67rem   
+        &__title
+            font-size: 1.2rem             
+@media screen and ( min-width: 870px) and( max-width: 906px )
+    .card
+        &__text
+            max-width: 88%
+            &__projects
+                padding: 1.65rem 1.6rem
+                &--one
+                    padding: 1.65rem 1.87rem
+                &--two
+                    padding: 1.65rem 1.87rem
     .col-50
         width: 100%
         &__projects
             margin-top: 3rem
-    .swiper-slide-image
-        width: 100%  
+        &-image
+            width: 100%  
     .footer
         &__map
             width: 100%  
         &__title__wrap
             &__text
                 max-width: 38rem      
+@media screen and (min-width: 767px) and( max-width: 888px )
+    .nav
+        &__item a 
+            margin-left: 1rem
 
+@media screen and ( max-width: 878px )         
+    .row
+        flex-direction: column
+        align-items: center   
+    .col-30
+        &-projects
+            margin-top: 5rem  
+    .card
+        &__text
+            max-width: 22.4rem       
+            left: 0   
 @media screen and (min-width: 400px) and ( max-width: 860px )   
     .row
         &__team
@@ -116,7 +174,7 @@
         margin-bottom: 5rem 
 
 @media screen and (min-width: 760px) and( max-width: 837px )
-    .card 
+    card 
         &__pricatag
             padding: 1.2rem 1.55rem
 
@@ -161,7 +219,7 @@
         display: block  
         z-index: 3 
     .menu__contacts
-        display: none    
+        z-index: 5   
     .menu
         width: 100% 
     .header
@@ -195,6 +253,7 @@
         width: 30px
         height: 20px 
         z-index: 3
+        display: none
     .menu__burger:before,
     .menu__burger:after
         content: ''
@@ -244,7 +303,7 @@
     .menu__nav__wrap
         display: inline
     body.lock
-        overflow: hidden    
+        overflow: hidden  
 
 @media screen and (min-width: 577px) and ( max-width: 731px )
     .modal
@@ -261,7 +320,34 @@
         &__button
             padding: 1rem 3rem                   
 
+@media screen and ( max-width: 688px )
+    .styles
+        &__wrapper
+            display: block 
+        &__description
+            max-width: 100%
+            text-align: center
+        &__title    
+            font-size: 1.833rem     
+            max-width: 72%
+            margin: 0 auto
+            padding: 0
+            transform: translate(0px, -28rem)
+        &__slider
+            flex-basis: 100%  
+            margin-top: -50% 
+            img
+                margin-top: 2rem   
+        &__title
+            &__list  
+                display: none
+    .slick
+        &-dots button
+            margin-bottom: 4rem     
 
+    .section
+        &__types
+            padding-bottom: 25rem                  
 @media screen and (min-width: 580px) and( max-width: 667px )
     .modal
         &__dialog
@@ -274,6 +360,7 @@
     .card
         &__team
             margin-bottom: 7.3rem
+
 @media screen and ( max-width: 576px ) 
     .container
         width: 90%   
@@ -352,7 +439,7 @@
         &__heading
             font-size: 1.85rem 
             margin-top: 0.833rem
-            margin-bottom: 1.65rem  
+            margin-bottom: 1.6rem  
             color: $light  
             line-height: 145%
             &--design
@@ -385,8 +472,10 @@
 
                   
     .modal__dialog
-            margin: 2.14rem 
+            margin: 1.3rem
             width: 100%
+            top: -1rem
+            padding: 2.357rem 1.3rem 1.928rem
     .col-50
         width: 100%  
     .col-30
@@ -395,7 +484,7 @@
         display: flex  
     .control
         background-color: $dark
-        margin-bottom: 6.8rem
+        padding-bottom: 6.1rem
         &__label
             color: rgba(255, 255, 255, 0.5) 
         &__policy
@@ -435,6 +524,7 @@
                     margin-top: 5.5rem
             &__group
                 font-size: 1.485rem 
+                color: #ffffff
                 &::placeholder
                     color: $light
     .section
@@ -535,6 +625,10 @@
             margin-bottom: 2.4rem        
         &__text
             width: 100% //27.9
+/** .styles
+    &__slider img
+            height: 17.285rem **/
+
 
 @media screen and ( max-width: 414px ) 
     .control
@@ -545,7 +639,9 @@
 @media screen and ( max-width: 384px )            
     .col-33
          margin-left: auto
-
+@media screen and ( max-width: 488px )
+    .swiper-slide
+        justify-content: center
 @media screen and ( min-width: 350px) and( max-width: 380px )
     .card
         &__image
@@ -563,7 +659,10 @@
     .card
         &__text
             margin-left: 0
-         
+    
+    .button
+        &--outline
+            margin-bottom: 4.5rem    
 @media screen and ( min-width: 360px) and( max-width: 374px )  
     .col-33
             margin-left: 2.2rem
@@ -583,25 +682,5 @@
         
     
 
-    
-
-                
-            
-                       
-    
-
-                
-              
              
-          
-
-       
- 
-            
-
-
-
- 
-
-      
-
+              

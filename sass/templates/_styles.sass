@@ -52,9 +52,64 @@
     &__wrapper
         position: relative
         display: flex
+        align-items: center
     &__row
         &__wrap
             flex-direction: column
             &__two          
                 flex-direction: column 
-   
+.styles
+    &__slider img
+            height: 37rem
+            width: 100%
+            margin-top: 26.5%
+    &__wrapper
+        justify-content: center        
+.slick
+    &-track
+        display: flex
+        align-items: flex-start
+    &-list    
+        overflow: hidden  
+    &-arrow
+        position: absolute
+        top: 55.5%
+        z-index: 5 
+        font-size: 0 // Убираем надписи на кнопках слайдера
+        width: 30px
+        height: 50px
+    &-prev    
+        background: url('../img/styles/styles__slider/arrows_right.svg') 0 0 no-repeat
+        transform: rotate(180deg)
+        border: none
+        outline: none
+        margin-top: -1.5rem
+    &-next
+        right: 0     // одну Кнопку прижимает вправо
+        background: url('../img/styles/styles__slider/arrows_right.svg') 0 0 no-repeat
+        border: none   // Убираем бордер
+        outline: none  // Убираем обводку при нажатии на кнопку
+    &-dots
+        display: flex
+        align-items: center
+        justify-content: center
+        li
+            list-style: none  // Убираем точки из списка
+        button
+            font-size: 0   // Убираем цифры и стилизуем буллиты
+            width: 10px
+            height: 10px
+            border-radius: 50%
+            padding: 0
+            border: none
+            background-color: $primary
+            margin: 0 10px 0 0
+            outline: none
+    &-active button
+        background-color: transparent
+        border: 2px solid #ffffff
+
+.styles
+    &__slider
+        min-width: 0  // Обязательно ставить,если контейнер является Flex-элементом   
+        flex-basis: 85%     

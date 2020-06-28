@@ -113,7 +113,7 @@
                                         <span class="swiper-slide__value">Ростов-на-Дону<br> ЖК Адмирал</span>
                                     </div>
                                     <!-- /.swiper-slide__text -->
-                                    <div class="swiper-slide__text">
+                                    <div class="swiper-slide__text swiper-slide__text--one">
                                         <h3 class="swiper-slide__heading">Площадь:</h3>
                                         <span class="swiper-slide__value">81 м2</span>
                                     </div>
@@ -123,7 +123,7 @@
                                         <span class="swiper-slide__value">3,5 месяца</span>
                                     </div>
                                     <!-- /.swiper-slide__text -->
-                                    <div class="swiper-slide__text">
+                                    <div class="swiper-slide__text swiper-slide__text--two">
                                         <h3 class="swiper-slide__heading">Стоимость:</h3>
                                         <span class="swiper-slide__value">По запросу</span>
                                     </div>
@@ -438,15 +438,40 @@
                     <!-- /.styles__description -->
                     <div class="styles__row">
                         <div class="styles__row styles__row__wrap">
-                            <col-25><img class="col__styles" src="img/styles/styles1.jpg" alt="картинка"></col-25>
-                            <col-25><img class="col__styles2" src="img/styles/styles2.jpg" alt="картинка"></col-25>
+                            <col-25 class="col__styles"><img  src="img/styles/styles1.jpg" alt="картинка"></col-25>
+                            <col-25 class="col__styles2"><img  src="img/styles/styles2.jpg" alt="картинка"></col-25>
                         </div>
                         <div class="styles__row styles__row__wrap__two">
-                            <col-25><img class="col__styles3" src="img/styles/styles3.jpg" alt="картинка"></col-25>
-                            <col-25><img class="col__styles4" src="img/styles/styles4.jpg" alt="картинка"></col-25>
+                            <col-25 class="col__styles3"><img  src="img/styles/styles3.jpg" alt="картинка"></col-25>
+                            <col-25 class="col__styles4"><img  src="img/styles/styles4.jpg" alt="картинка"></col-25>
                         </div>
                     </div>
                     <!-- /.styles__row -->
+                    <div class="styles__slider">
+                        <div class="slider__item">
+                            <img src="img/styles/styles__slider/slider_1.webp" alt="Картинка">
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/styles/styles__slider/slider_2.jpg" alt="Картинка">
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/styles/styles__slider/slider_3.jpg" alt="Картинка">
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/styles/styles__slider/slider_4.jpg" alt="Картинка">
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/styles/styles__slider/slider_5.jpg" alt="Картинка">
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/styles/styles__slider/slider_6.jpg" alt="Картинка">
+                        </div>
+                        <div class="slider__item">
+                            <img src="img/styles/styles__slider/slider_7.jpg" alt="Картинка">
+                        </div>
+                        <!-- /.slider__item -->
+                    </div>
+                    <!-- /.slider -->
                 </div>
                 <!-- /.styles__wrapper -->
             </div>
@@ -855,12 +880,14 @@
                 <div class="menu ">
                     <a class="logo logo__menu" href="index.html">Repair Design Project</a>
                     <nav class="nav menu__nav">
-                        <a href="#" class="nav__item">Главная</a>
-                        <a href="#projects" class="nav__item">Проекты</a>
-                        <a href="#" class="nav__item">Замер</a>
-                        <a href="#team" class="nav__item">Команда</a>
-                        <a href="#" class="nav__item">Отзывы</a>
-                        <a href="#contacts" class="nav__item">Контакты</a>
+                        <ul class="nav menu__nav menu__nav__wrap">
+                            <li class="nav__item"><a href="#">Главная</a></li>
+                            <li class="nav__item"><a href="#projects">Проекты</a></li>
+                            <li class="nav__item"><a href="#">Замер</a></li>
+                            <li class="nav__item"><a href="#team">Команда</a></li>
+                            <li class="nav__item"><a href="#client">Отзывы</a></li>
+                            <li class="nav__item"><a href="#contacts">Контакты</a></li>
+                        </ul>
                     </nav>
                     <div class="contacts menu__contacts">
                         <a href="tel:+79997683299" class="phone contacts__phone">+7 (999) 768-32-99</a>
@@ -917,7 +944,6 @@
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
